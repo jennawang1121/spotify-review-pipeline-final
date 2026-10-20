@@ -1,0 +1,20 @@
+{
+  "method": "Resolve saved classification response to its original attempt.review_ids; source text and target membership verified before source-ID-only correction",
+  "runs": [
+    {
+      "run": "checkpoint-10000",
+      "direct_cache_source_ids_corrected": 0,
+      "prediction_changes": 0
+    },
+    {
+      "run": "final-100k",
+      "direct_cache_source_ids_corrected": 589,
+      "prediction_changes": 0
+    },
+    {
+      "run": "final-100k-prepared",
+      "direct_cache_source_ids_corrected": 589,
+      "prediction_changes": 0
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "evidence_kind": "real_pilot",
+  "measurement": {
+    "evidence_kind": "real_pilot",
+    "run_id": "warm-a4dbb3190e044266a8d8b7fc8a7e8b97",
+    "phase": "warm",
+    "outcome": "completed",
+    "input_records": 100,
+    "completed_records": 100,
+    "pending_records": 0,
+    "quarantined_records": 0,
+    "unique_texts": 100,
+    "new_unique_results": 0,
+    "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+    "wall_seconds": 0.020588291999999994,
+    "stage_wall_seconds": {
+      "ingestion": 0.007040416999999993,
+      "enrichment": 0.00032574999999999965,
+      "verification": 0.0023486669999999987,
+      "grouping_and_ranking": 0.005149332999999992,
+      "memo": 0.0013264580000000026
+    },
+    "local_compute_usd": null,
+    "result_cache_hits": 100,
+    "downstream_response_cache_hits": 7,
+    "budget_usd": "0.90",
+    "budget": {
+      "spent_usd": "0.007073404",
+      "reserved_usd": "0",
+      "unresolved_attempts": 0,
+      "over_limit": false
+    },
+    "max_workers": 1,
+    "max_output_tokens": 1200,
+    "strong_model_fallback_fraction": 0
+  },
+  "known_api_usd": "0",
+  "unknown_charge_attempts": 0,
+  "total_api_usd": "0",
+  "stages": {},
+  "api_usd_per_1000_inputs": "0",
+  "api_usd_per_completed": "0",
+  "completed_per_second": "4857.129479220521505269930858",
+  "local_compute_usd": null,
+  "notes": [
+    "Summed call durations are not end-to-end wall time.",
+    "Reasoning already billed in output must not be added again.",
+    "Incomplete charge coverage makes total API spend unknown."
+  ]
+}

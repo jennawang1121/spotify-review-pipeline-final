@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "url": "https://spotify-review-evidence.jenna851121.chatgpt.site",
+  "coverage": {
+    "total": 500,
+    "completed": 500,
+    "pending": 0,
+    "quarantined": 0,
+    "needs_review": 265
+  },
+  "database": {
+    "revision": "checkpoint-500-a88f521a4089",
+    "source": "D1 SQL queries over saved processed records"
+  },
+  "issue_rankings_match_saved_results": 8,
+  "filters_and_source_quote_valid": true,
+  "independent_cases": 25,
+  "recommendation_priority_matches_ranking": true,
+  "new_model_calls": 0,
+  "method": "Deployed Worker API reads production D1; compares exact coverage, baseline figures and source evidence to saved checkpoint results."
+}

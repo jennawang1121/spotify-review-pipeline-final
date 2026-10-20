@@ -1,0 +1,36 @@
+{
+  "issues": [
+    {
+      "issue_id": "issue-usability",
+      "name": "Usability, interface, and free-tier limitations"
+    },
+    {
+      "issue_id": "issue-playback",
+      "name": "Playback, connectivity, and app stability problems"
+    },
+    {
+      "issue_id": "issue-other",
+      "name": "General dissatisfaction and unspecified complaints"
+    },
+    {
+      "issue_id": "issue-billing",
+      "name": "Premium requirements and subscription limitations"
+    },
+    {
+      "issue_id": "issue-catalog",
+      "name": "Music availability and recommendations"
+    },
+    {
+      "issue_id": "issue-access",
+      "name": "Login and account access problems"
+    },
+    {
+      "issue_id": "issue-downloads",
+      "name": "Downloads and offline playback problems"
+    },
+    {
+      "issue_id": "issue-support",
+      "name": "Support-related complaint"
+    }
+  ]
+}

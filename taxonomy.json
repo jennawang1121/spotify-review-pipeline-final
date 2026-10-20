@@ -1,0 +1,28 @@
+{
+  "version": "a5-audit-v1",
+  "topic": {
+    "access": "Login, signup, password or account access.",
+    "usability": "Navigation, controls, layout, queue/playlist management or ad interruptions.",
+    "playback": "Playback failure, crashes, lag, connection failures, audio quality or resource use.",
+    "downloads": "Downloading, saved music, offline listening or disappearing downloads.",
+    "catalog": "Missing songs/artists, search/discovery, recommendations or lyrics availability.",
+    "billing": "Price, charges, subscriptions, paywalls, premium entitlement or explicitly premium-only controls. Mentioning a paid plan alone is insufficient.",
+    "support": "Contacting support or the quality of a support response.",
+    "other": "No specific feature or none of the listed topics fits."
+  },
+  "intent": {
+    "cancellation": "Explicit personal departure or cancellation intent; takes precedence over complaint.",
+    "complaint": "A reported product problem or criticism, without cancellation intent.",
+    "request": "A feature or change request without a higher-precedence intent.",
+    "praise": "Positive evaluation without cancellation, complaint, or request.",
+    "unclear": "Insufficient interpretable content; a boycott slogan alone is insufficient for cancellation."
+  },
+  "severity": {
+    "1": "No reported problem, praise, unclear content, or a pure feature request.",
+    "2": "Annoyance or generic criticism without a clearly restricted function.",
+    "3": "Function degraded or restricted but some use remains.",
+    "4": "A core task is clearly blocked.",
+    "5": "Explicit serious financial, privacy, or data harm."
+  },
+  "sentiment": ["Strongly negative", "Somewhat negative", "Neutral, mixed, or unclear", "Somewhat positive", "Strongly positive"]
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "a5-audit-v1",
+  "classifier_model": "jev-1.13.0",
+  "language_model": "gpt-6-luna",
+  "reasoning_effort": "none",
+  "extraction_policy": "verbatim-feature-terms-v1-short600",
+  "workers": 2,
+  "max_reviews_per_request": 1,
+  "max_input_bytes": 16000,
+  "max_output_tokens": 1200,
+  "max_runtime_seconds": 900,
+  "invalid_output_retries": 1,
+  "transient_error_retries": 2,
+  "spending_limit_usd": "1.00",
+  "strong_model_fallback_fraction": 0.01,
+  "verification_fraction": 0.05,
+  "verification_seed": 20261005,
+  "sentiment_evaluation_tolerance": 0.25
+}

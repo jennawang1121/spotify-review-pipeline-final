@@ -1,0 +1,62 @@
+{
+  "authorized_total_usd": "1.00",
+  "known_spent_usd": "0.372428095",
+  "unresolved_reservations_usd": "0.01476525",
+  "allocations": [
+    {
+      "directory": "runs/pilot-live",
+      "cumulative_cap_usd": "0.03",
+      "scope": "development and recovery, including all unknown charges reserved",
+      "spent_usd": "0.008893546",
+      "reserved_usd": "0.01207725",
+      "unresolved_attempts": 6,
+      "over_limit": false
+    },
+    {
+      "directory": "runs/pilot-benchmark",
+      "cumulative_cap_usd": "0.01",
+      "scope": "uninterrupted cold plus warm benchmark",
+      "spent_usd": "0.007073404",
+      "reserved_usd": "0",
+      "unresolved_attempts": 0,
+      "over_limit": false
+    },
+    {
+      "directory": "runs/system-checks",
+      "cumulative_cap_usd": "0.005",
+      "scope": "Eight planned real-model calls on invented injection/control inputs; includes a predeclared planted-error test",
+      "spent_usd": "0.00059824",
+      "reserved_usd": "0",
+      "unresolved_attempts": 0,
+      "over_limit": false
+    },
+    {
+      "directory": "runs/checkpoint-500",
+      "cumulative_cap_usd": "0.035",
+      "scope": "500 development checkpoint, including bounded retries and warm replay; reuses prior pilot labels",
+      "spent_usd": "0.024163929",
+      "reserved_usd": "0",
+      "unresolved_attempts": 0,
+      "over_limit": false
+    },
+    {
+      "directory": "runs/checkpoint-10000",
+      "cumulative_cap_usd": "0.80",
+      "scope": "10k checkpoint with two shared-rate workers, real recorded stop/resume, blind verification and warm replay",
+      "spent_usd": "0.329298844",
+      "reserved_usd": "0.002688",
+      "unresolved_attempts": 1,
+      "over_limit": false
+    },
+    {
+      "directory": "runs/golden-evaluation",
+      "cumulative_cap_usd": "0.02",
+      "scope": "Frozen-classifier blind predictions on original50 texts only; no reference answers in model input",
+      "spent_usd": "0.002400132",
+      "reserved_usd": "0",
+      "unresolved_attempts": 0,
+      "over_limit": false
+    }
+  ],
+  "note": "Snapshot during running10k; old unknown-usage charges remain unresolved, not zero."
+}

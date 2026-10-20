@@ -1,0 +1,39 @@
+{
+  "schema": "internal-store-with-a5-audit-v1-hash",
+  "file_sha256": "b87ca3b10e8ff88d3a4a203f69ae9a9dc8c36fa4ed67ea8e1e3dda4363808842",
+  "file_bytes": 14734591,
+  "source_rows": 100013,
+  "nonempty_rows": 100000,
+  "empty_rows": 13,
+  "unique_nonempty_texts": 78099,
+  "exact_text_reuse_rows": 21901,
+  "duplicate_review_ids": 0,
+  "ratings": {
+    "1": 36544,
+    "3": 5093,
+    "5": 45721,
+    "2": 4638,
+    "4": 8017
+  },
+  "missing_values": {
+    "review_id": 0,
+    "review_text": 13,
+    "review_rating": 0,
+    "review_likes": 0,
+    "app_version": 24251,
+    "review_timestamp": 0
+  },
+  "timestamp_min_lexical": "2022-05-17 00:16:43",
+  "timestamp_max_lexical": "2023-11-15 23:05:35",
+  "timestamp_note": "Source strings preserved; timezone unspecified. Lexical bounds require ISO-like source format.",
+  "internal_hash_algorithm": "sha256(UTF-8 JSON object, sorted keys, compact separators, ensure_ascii=False)",
+  "source_headers": [
+    "review_id",
+    "review_text",
+    "review_rating",
+    "review_likes",
+    "app_version",
+    "review_timestamp"
+  ],
+  "official_row_hash": "Unmodified course/check_submission.py::row_sha"
+}

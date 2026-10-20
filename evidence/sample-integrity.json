@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "reviews_by_month": true,
+    "reviews_by_rating": true,
+    "first_review": true,
+    "last_review": true,
+    "counts": true,
+    "pilot_is_first_100_checkpoint_ids": true,
+    "checkpoint_is_first_500_analysis_ids": true,
+    "golden_ids_disjoint_from_development": true,
+    "unmodified_reference_copies": true
+  },
+  "sample_counts": {
+    "cost_100": 100,
+    "checkpoint_500": 500,
+    "analysis_10000": 10000,
+    "golden_50_to_label": 50
+  },
+  "human_answers_inspected": false
+}

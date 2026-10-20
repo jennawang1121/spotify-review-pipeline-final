@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "database": "Real local SQLite, same generated Drizzle schema and Worker API handler",
+  "coverage": {
+    "total": 500,
+    "completed": 500,
+    "pending": 0,
+    "quarantined": 0,
+    "needs_review": 265
+  },
+  "issue_rankings_match_saved_csv": 8,
+  "filtered_reviews_valid": true,
+  "review_quote_and_provenance_valid": true,
+  "blind_verifier_cases": 25,
+  "editorial_memo_read_from_database": true,
+  "unknown_review_returns_404": true,
+  "new_model_calls": 0
+}

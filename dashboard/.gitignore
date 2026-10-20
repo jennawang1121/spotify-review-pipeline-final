@@ -1,0 +1,9 @@
+dist/
+site.tar.gz
+node_modules/
+.npm-cache/
+.sites-runtime/
+*.sqlite*
+.env
+.env.*
+!.env.example

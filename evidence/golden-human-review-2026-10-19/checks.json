@@ -1,0 +1,928 @@
+{
+  "workbook_sha256": "b3ebf2229230a12111f1ac921c50be571eacd0a01c4fbdd6b855a8a9f7f0cf8d",
+  "original_text_and_ids_valid": true,
+  "required_cell_issues": [
+    {
+      "cell": "H6",
+      "review_number": 1,
+      "field": "entities",
+      "value": "Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I6",
+      "review_number": 1,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E7",
+      "review_number": 2,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H7",
+      "review_number": 2,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I7",
+      "review_number": 2,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E8",
+      "review_number": 3,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H8",
+      "review_number": 3,
+      "field": "entities",
+      "value": "Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I8",
+      "review_number": 3,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H9",
+      "review_number": 4,
+      "field": "entities",
+      "value": "Ads",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I9",
+      "review_number": 4,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E10",
+      "review_number": 5,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H10",
+      "review_number": 5,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I10",
+      "review_number": 5,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H11",
+      "review_number": 6,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I11",
+      "review_number": 6,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E12",
+      "review_number": 7,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H12",
+      "review_number": 7,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I12",
+      "review_number": 7,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E13",
+      "review_number": 8,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H13",
+      "review_number": 8,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I13",
+      "review_number": 8,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E14",
+      "review_number": 9,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H14",
+      "review_number": 9,
+      "field": "entities",
+      "value": "Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I14",
+      "review_number": 9,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E15",
+      "review_number": 10,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H15",
+      "review_number": 10,
+      "field": "entities",
+      "value": "Premium",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I15",
+      "review_number": 10,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H16",
+      "review_number": 11,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I16",
+      "review_number": 11,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E17",
+      "review_number": 12,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H17",
+      "review_number": 12,
+      "field": "entities",
+      "value": "App, Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I17",
+      "review_number": 12,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H18",
+      "review_number": 13,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I18",
+      "review_number": 13,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E19",
+      "review_number": 14,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H19",
+      "review_number": 14,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I19",
+      "review_number": 14,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E20",
+      "review_number": 15,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H20",
+      "review_number": 15,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I20",
+      "review_number": 15,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H21",
+      "review_number": 16,
+      "field": "entities",
+      "value": "Ads",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I21",
+      "review_number": 16,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E22",
+      "review_number": 17,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H22",
+      "review_number": 17,
+      "field": "entities",
+      "value": "Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I22",
+      "review_number": 17,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H23",
+      "review_number": 18,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I23",
+      "review_number": 18,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "C24",
+      "review_number": 19,
+      "field": "topic",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H24",
+      "review_number": 19,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I24",
+      "review_number": 19,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H25",
+      "review_number": 20,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I25",
+      "review_number": 20,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H26",
+      "review_number": 21,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I26",
+      "review_number": 21,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E27",
+      "review_number": 22,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H27",
+      "review_number": 22,
+      "field": "entities",
+      "value": "Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I27",
+      "review_number": 22,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E28",
+      "review_number": 23,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H28",
+      "review_number": 23,
+      "field": "entities",
+      "value": "App, Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I28",
+      "review_number": 23,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H29",
+      "review_number": 24,
+      "field": "entities",
+      "value": "Ad",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I29",
+      "review_number": 24,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H30",
+      "review_number": 25,
+      "field": "entities",
+      "value": "App, Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I30",
+      "review_number": 25,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E31",
+      "review_number": 26,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H31",
+      "review_number": 26,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I31",
+      "review_number": 26,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H32",
+      "review_number": 27,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I32",
+      "review_number": 27,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E33",
+      "review_number": 28,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H33",
+      "review_number": 28,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I33",
+      "review_number": 28,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H34",
+      "review_number": 29,
+      "field": "entities",
+      "value": "Premium, App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I34",
+      "review_number": 29,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H35",
+      "review_number": 30,
+      "field": "entities",
+      "value": "Premium, App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I35",
+      "review_number": 30,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E36",
+      "review_number": 31,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H36",
+      "review_number": 31,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I36",
+      "review_number": 31,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E37",
+      "review_number": 32,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H37",
+      "review_number": 32,
+      "field": "entities",
+      "value": "App, Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I37",
+      "review_number": 32,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H38",
+      "review_number": 33,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I38",
+      "review_number": 33,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H39",
+      "review_number": 34,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I39",
+      "review_number": 34,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E40",
+      "review_number": 35,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H40",
+      "review_number": 35,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I40",
+      "review_number": 35,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E41",
+      "review_number": 36,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H41",
+      "review_number": 36,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I41",
+      "review_number": 36,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E42",
+      "review_number": 37,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H42",
+      "review_number": 37,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I42",
+      "review_number": 37,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H43",
+      "review_number": 38,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I43",
+      "review_number": 38,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E44",
+      "review_number": 39,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H44",
+      "review_number": 39,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I44",
+      "review_number": 39,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E45",
+      "review_number": 40,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H45",
+      "review_number": 40,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I45",
+      "review_number": 40,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H46",
+      "review_number": 41,
+      "field": "entities",
+      "value": "Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I46",
+      "review_number": 41,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H47",
+      "review_number": 42,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I47",
+      "review_number": 42,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H48",
+      "review_number": 43,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I48",
+      "review_number": 43,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E49",
+      "review_number": 44,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H49",
+      "review_number": 44,
+      "field": "entities",
+      "value": "Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I49",
+      "review_number": 44,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H50",
+      "review_number": 45,
+      "field": "entities",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "I50",
+      "review_number": 45,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H51",
+      "review_number": 46,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I51",
+      "review_number": 46,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H52",
+      "review_number": 47,
+      "field": "entities",
+      "value": "Ads",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I52",
+      "review_number": 47,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "H53",
+      "review_number": 48,
+      "field": "entities",
+      "value": "Spotify",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I53",
+      "review_number": 48,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E54",
+      "review_number": 49,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H54",
+      "review_number": 49,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I54",
+      "review_number": 49,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    },
+    {
+      "cell": "E55",
+      "review_number": 50,
+      "field": "severity",
+      "value": "0",
+      "issue": "必須是 1～5 的整數"
+    },
+    {
+      "cell": "H55",
+      "review_number": 50,
+      "field": "entities",
+      "value": "App",
+      "issue": "須改為 JSON 陣列格式，例如 [\"Spotify\"]；沒有實體填 []"
+    },
+    {
+      "cell": "I55",
+      "review_number": 50,
+      "field": "evidence_quote",
+      "value": "",
+      "issue": "必填欄空白"
+    }
+  ],
+  "issue_counts": {
+    "entities": 50,
+    "evidence_quote": 50,
+    "severity": 25,
+    "topic": 1
+  },
+  "needs_review_counts": {
+    "true": 47,
+    "false": 3
+  },
+  "severity_zero_cells": [
+    "E7",
+    "E8",
+    "E10",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E17",
+    "E19",
+    "E20",
+    "E22",
+    "E27",
+    "E28",
+    "E31",
+    "E33",
+    "E36",
+    "E37",
+    "E40",
+    "E41",
+    "E42",
+    "E44",
+    "E45",
+    "E49",
+    "E54",
+    "E55"
+  ],
+  "status": "needs_student_completion",
+  "predictions_consulted": false,
+  "api_calls": 0
+}

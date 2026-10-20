@@ -1,0 +1,12 @@
+{
+  "experiment": "runs/pilot-live",
+  "completed_before_resume": 42,
+  "failed_attempt_ids": [
+    "a0d2b3d3e29c4210846ecb9d6a4f738c",
+    "28b6ed4dba8e4db39b3366294e66c239"
+  ],
+  "cause": "Two-decimal provider probabilities summed to 0.99; old validator required 0.001 tolerance.",
+  "fix": "Allow only accumulated two-decimal rounding tolerance; preserve original raw probabilities and failed attempts.",
+  "revalidated_saved_responses": 2,
+  "recovery_recording_available": false
+}

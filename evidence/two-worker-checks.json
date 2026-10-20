@@ -1,0 +1,29 @@
+{
+  "tests_passed": 41,
+  "network_calls_in_tests": 0,
+  "fixtures": "invented review texts, mocked providers",
+  "checks": [
+    "original one-worker cold100 still enforced",
+    "two-worker cache identity unchanged",
+    "exact admitted stop count and resume skips saved IDs",
+    "successful peer saved after worker failure",
+    "two separate SQLite connections cannot jointly exceed shared cap",
+    "expired rate-limiter deadline fails before reservation"
+  ],
+  "real_recovery_checks": {
+    "evidence_kind": "real_paid_execution_recording",
+    "before_completed_ids": 1463,
+    "after_completed_ids": 1488,
+    "saved_ids_retained": true,
+    "already_saved_ids_reclassified_on_resume": [],
+    "successful_new_unique_results": 50,
+    "budget_cap_usd": "0.80",
+    "max_workers": 2,
+    "recording_duration_seconds": 29.032328
+  },
+  "limitations": [
+    "No measured one-versus-two speedup claim",
+    "The dispatch limiter remains two calls per second across workers",
+    "Only enrichment runs with two workers; verification remains sequential"
+  ]
+}

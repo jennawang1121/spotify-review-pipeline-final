@@ -1,0 +1,125 @@
+[
+  {
+    "name": "base_exact_reuse",
+    "source_rows": 660622,
+    "budget_usd": "1.00",
+    "stages": {
+      "classification": {
+        "pilot_units": 100,
+        "projected_units": 484189,
+        "attempts_multiplier": "1"
+      },
+      "verification": {
+        "pilot_units": 5,
+        "projected_units": 33031,
+        "attempts_multiplier": "1"
+      },
+      "grouping": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      },
+      "memo": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      },
+      "extraction": {
+        "pilot_units": 0,
+        "projected_units": 7,
+        "attempts_multiplier": "1"
+      }
+    },
+    "assumptions": {
+      "workers": 1,
+      "verification_fraction": 0.05,
+      "strong_model_fallback_fraction": 0,
+      "fallbacks": "Disabled in all scenarios until quality evidence justifies routing.",
+      "unmeasured_extraction": "Seven distinct full-source texts exceed 600 characters. Pilot contains none.",
+      "budget": "Current experiment budget for comparison only; full run not approved.",
+      "time": "Measured per-stage elapsed time scales by relevant work units. Local full-corpus grouping/ingestion and seven extraction calls are still unmeasured."
+    }
+  },
+  {
+    "name": "conservative_more_retries_and_verification",
+    "source_rows": 660622,
+    "budget_usd": "1.00",
+    "stages": {
+      "classification": {
+        "pilot_units": 100,
+        "projected_units": 484189,
+        "attempts_multiplier": "1.20"
+      },
+      "verification": {
+        "pilot_units": 5,
+        "projected_units": 66061,
+        "attempts_multiplier": "1.20"
+      },
+      "grouping": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1.20"
+      },
+      "memo": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1.20"
+      },
+      "extraction": {
+        "pilot_units": 0,
+        "projected_units": 7,
+        "attempts_multiplier": "1.20"
+      }
+    },
+    "assumptions": {
+      "workers": 1,
+      "verification_fraction": 0.1,
+      "strong_model_fallback_fraction": 0,
+      "fallbacks": "Disabled in all scenarios until quality evidence justifies routing.",
+      "unmeasured_extraction": "Seven distinct full-source texts exceed 600 characters. Pilot contains none.",
+      "budget": "Current experiment budget for comparison only; full run not approved.",
+      "time": "Measured per-stage elapsed time scales by relevant work units. Local full-corpus grouping/ingestion and seven extraction calls are still unmeasured."
+    }
+  },
+  {
+    "name": "no_text_reuse",
+    "source_rows": 660622,
+    "budget_usd": "1.00",
+    "stages": {
+      "classification": {
+        "pilot_units": 100,
+        "projected_units": 660609,
+        "attempts_multiplier": "1"
+      },
+      "verification": {
+        "pilot_units": 5,
+        "projected_units": 33031,
+        "attempts_multiplier": "1"
+      },
+      "grouping": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      },
+      "memo": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      },
+      "extraction": {
+        "pilot_units": 0,
+        "projected_units": 7,
+        "attempts_multiplier": "1"
+      }
+    },
+    "assumptions": {
+      "workers": 1,
+      "verification_fraction": 0.05,
+      "strong_model_fallback_fraction": 0,
+      "fallbacks": "Disabled in all scenarios until quality evidence justifies routing.",
+      "unmeasured_extraction": "Seven distinct full-source texts exceed 600 characters. Pilot contains none.",
+      "budget": "Current experiment budget for comparison only; full run not approved.",
+      "time": "Measured per-stage elapsed time scales by relevant work units. Local full-corpus grouping/ingestion and seven extraction calls are still unmeasured."
+    }
+  }
+]

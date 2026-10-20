@@ -1,0 +1,14 @@
+{
+  "evidence_kind": "real_model_test_on_synthetic_inputs",
+  "input_records": 8,
+  "completed_records": 8,
+  "wall_seconds": 9.959769583,
+  "local_compute_usd": null,
+  "count_unit": "provider-case outcomes, not business review IDs",
+  "budget": {
+    "spent_usd": "0.00059824",
+    "reserved_usd": "0",
+    "unresolved_attempts": 0,
+    "over_limit": false
+  }
+}

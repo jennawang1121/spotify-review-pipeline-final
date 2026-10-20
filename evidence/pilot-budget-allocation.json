@@ -1,0 +1,46 @@
+{
+  "overall_authorized_usd": "7.00",
+  "allocations": [
+    {
+      "directory": "runs/pilot-live",
+      "cumulative_cap_usd": "0.03",
+      "scope": "development and recovery, including all unknown charges reserved"
+    },
+    {
+      "directory": "runs/pilot-benchmark",
+      "cumulative_cap_usd": "0.01",
+      "scope": "uninterrupted cold plus warm benchmark"
+    },
+    {
+      "directory": "runs/system-checks",
+      "cumulative_cap_usd": "0.005",
+      "scope": "Eight planned real-model calls on invented injection/control inputs; includes a predeclared planted-error test"
+    },
+    {
+      "directory": "runs/checkpoint-500",
+      "cumulative_cap_usd": "0.035",
+      "scope": "500 development checkpoint, including bounded retries and warm replay; reuses prior pilot labels"
+    },
+    {
+      "directory": "runs/checkpoint-10000",
+      "cumulative_cap_usd": "0.80",
+      "scope": "10k checkpoint with two shared-rate workers, real recorded stop/resume, blind verification and warm replay"
+    },
+    {
+      "directory": "runs/worker-comparison",
+      "cumulative_cap_usd": "0.10",
+      "scope": "Reserved only; any real comparison must remain within this project allocation"
+    },
+    {
+      "directory": "runs/golden-evaluation",
+      "cumulative_cap_usd": "0.02",
+      "scope": "Frozen-classifier blind predictions on original50 texts only; no reference answers in model input"
+    },
+    {
+      "directory": "runs/final-100k",
+      "cumulative_cap_usd": "6.00",
+      "scope": "User approved final100k classification,5% blind verification,grouping,memo,warm replay within total project API cap7"
+    }
+  ],
+  "note": "User explicitly approved total API cap USD7 in chat. Existing experiment allocations total1; final100k allocation6. Unknown old usage reservations retained. Hosting excluded."
+}

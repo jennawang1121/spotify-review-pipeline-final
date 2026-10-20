@@ -1,0 +1,161 @@
+{
+  "sample_size": 5,
+  "sample_seed": 20261005,
+  "scope": "Independent model agreement on a development sample; NOT accuracy or human golden evaluation.",
+  "agreement_counts": {
+    "topic": 5,
+    "intent": 5,
+    "severity": 5,
+    "needs_review": 4
+  },
+  "any_categorical_disagreement_count": 1,
+  "sentiment_mean_absolute_difference": 0.10099999999999998,
+  "sentiment_within_0_25_count": 5,
+  "cases": [
+    {
+      "disagreements": [],
+      "first_prediction": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "It not letting me into my account and there are to many ads",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.87,
+        "severity": 4,
+        "topic": "access"
+      },
+      "independent_prediction": {
+        "entities": [],
+        "evidence_quote": "It not letting me into my account",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.7,
+        "severity": 4,
+        "topic": "access"
+      },
+      "review_id": "32fb340f-4f9f-4551-8dae-755221e58d6a",
+      "sentiment_absolute_difference": 0.17000000000000004,
+      "verifier_request_id": "d3c945c41ab74586a401c35128510c06"
+    },
+    {
+      "disagreements": [
+        "needs_review"
+      ],
+      "first_prediction": {
+        "entities": [
+          "Playlist"
+        ],
+        "evidence_quote": "Your new features are really bad thing that I found because it plays any song of the Playlist randomly it really really disappointing for and listeners who don't need disturbance in their song patterns. I apologise to your team for reverse your updated or change the new features to old features . Thanks 😊",
+        "intent": "complaint",
+        "needs_review": true,
+        "sentiment": -0.885,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "independent_prediction": {
+        "entities": [
+          "Playlist"
+        ],
+        "evidence_quote": "it plays any song of the Playlist randomly",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.9,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "review_id": "5c9c17d3-9d6a-4fa1-a2a4-ae98eefbbd25",
+      "sentiment_absolute_difference": 0.015000000000000013,
+      "verifier_request_id": "7333ccfcb2b94caebbebe93ecf201f7d"
+    },
+    {
+      "disagreements": [],
+      "first_prediction": {
+        "entities": [],
+        "evidence_quote": "I'm lovin it",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.97,
+        "severity": 1,
+        "topic": "other"
+      },
+      "independent_prediction": {
+        "entities": [],
+        "evidence_quote": "I'm lovin it",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.8,
+        "severity": 1,
+        "topic": "other"
+      },
+      "review_id": "5db4a676-1f15-48cf-b989-a0a0fdb1c7a3",
+      "sentiment_absolute_difference": 0.16999999999999993,
+      "verifier_request_id": "495c3cef921546388961d91e102758ee"
+    },
+    {
+      "disagreements": [],
+      "first_prediction": {
+        "entities": [],
+        "evidence_quote": "There's no words for how awesome this music app is.",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9950000000000001,
+        "severity": 1,
+        "topic": "other"
+      },
+      "independent_prediction": {
+        "entities": [],
+        "evidence_quote": "how awesome this music app is",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "review_id": "884e8712-da13-4890-a39e-731b69f42d6c",
+      "sentiment_absolute_difference": 0.004999999999999893,
+      "verifier_request_id": "119112579db249fea6b2efce3eaf32d4"
+    },
+    {
+      "disagreements": [],
+      "first_prediction": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "The ads are so loud :'(",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.5549999999999999,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "independent_prediction": {
+        "entities": [],
+        "evidence_quote": "The ads are so loud :'(",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.7,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "review_id": "ab67a772-c3b7-42ba-9b80-8d21d3857018",
+      "sentiment_absolute_difference": 0.14500000000000002,
+      "verifier_request_id": "76641f2bbfba4b08ac817c4102bc2208"
+    }
+  ],
+  "repeat_classification_agreement_counts": {
+    "topic": 98,
+    "intent": 100,
+    "severity": 98,
+    "needs_review": 96
+  },
+  "repeat_comparison_size": 100,
+  "needs_review_count": 54,
+  "intent_counts": {
+    "unclear": 6,
+    "praise": 40,
+    "complaint": 42,
+    "cancellation": 10,
+    "request": 2
+  }
+}

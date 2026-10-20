@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+runs/
+*.sqlite*
+node_modules/
+.openai/
+.wrangler/
+dist/
+worker/
+data/course/spotify_reviews_18months.csv
+data/course-dataset.zip

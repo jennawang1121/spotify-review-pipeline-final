@@ -1,0 +1,11 @@
+{
+  "review_id": "11344c5e-30ca-49ce-a61c-3cf21bab8840",
+  "original_failed_attempt": "24705b2417dd4affac2b69f1c56ef736",
+  "original_quote": "Bad app when I can't even log onto it or make an account.",
+  "restored_quote": "Bad app when I can't even log onto it or \nmake an account.",
+  "reused_saved_provider_response": true,
+  "original_attempt_outcomes_preserved": true,
+  "new_paid_calls_for_repair": 0,
+  "label_changes": false,
+  "repair": "Restore whitespace from exact source span; no word or case changes permitted."
+}

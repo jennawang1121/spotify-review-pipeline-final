@@ -1,0 +1,20 @@
+{
+  "source_file": "checkpoint_500.csv",
+  "input_rows": 500,
+  "input_sha256": "a94e31663ee7b7eaa77e23b7a8425b530cc0c866ed5e714953172a0afef6a12f",
+  "status": {
+    "statuses": {
+      "completed": 112,
+      "pending": 388
+    },
+    "cache_reused_records": 12,
+    "completed_provenance": {
+      "provider_response": 112
+    },
+    "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+    "official_contract_validated": false
+  },
+  "paid_calls": 0,
+  "note": "Preparation only. Completed labels reused from saved pilot; carry original model-call evidence into any later grading export. No 500-run execution or timing claimed.",
+  "pending_gate": "Student human golden labels and evaluation; 500 runner not executed."
+}

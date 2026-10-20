@@ -1,0 +1,17 @@
+{
+  "note": "Post-run source hashes for reproducibility; no provider credentials or raw environment contents included.",
+  "files": {
+    "pipeline/__init__.py": "eab194815bd7fc720899105d229c93e46d4cd4da3df8157cdb885c17e228813d",
+    "pipeline/__main__.py": "d8a6a40e642eb2759114884b69b6546b726d35160786c69c3c131b023d00f1cc",
+    "pipeline/budget.py": "29cb568c314d61a2a08cd430dcf4d514c16a553c3154e29a2d73efb757fe947c",
+    "pipeline/common.py": "e1bb8fc4ede3fdf124bc600f8d78677ad14d5839d5f3c1e7a0a0418ed4413130",
+    "pipeline/contract.py": "6a089941085a4b1c9c160e41ae697ae252c0bd5d258c9b86c9eafbd2f9221f7d",
+    "pipeline/costing.py": "7cf35ccb967b450192e1068d4b46e89d666a8044f4601f57699c8584da52ab87",
+    "pipeline/evaluation.py": "f2b5d3ba0950ae18d46d52284cb2ee6c136f4efbc4971d9860427e87a880f9bf",
+    "pipeline/jev.py": "de1536707fadb9cdf6156d14a10bfba38de12fb93893c4432aa676d6429a8f1a",
+    "pipeline/providers.py": "6fd9589ef4fd93dbcd724225de430e07b8578303d3fde9f1a4fbd438fbf2dbbb",
+    "pipeline/ranking.py": "73ade8593c88cc683bf99e954a7d80367a9fcf237983193b383872067c713c30",
+    "pipeline/runner.py": "973edaa4d47644087a3859c735b6a19dcf7ff1ef441115644cfecdbbd85d24b5",
+    "pipeline/store.py": "854f978c0ed748f721ff791d3a73496fcad5f7b2354a2442aa0a43ffd9499b19"
+  }
+}

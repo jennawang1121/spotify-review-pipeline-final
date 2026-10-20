@@ -1,0 +1,146 @@
+{
+  "basis_run_id": "initial-415aa52bbae7499c993774b98324f613",
+  "scenarios": [
+    {
+      "name": "scope_100k_base_exact_reuse",
+      "source_rows": 100013,
+      "stages": {
+        "classification": {
+          "projected_usd": "4.259116394976253298153034300",
+          "projected_units": "78099",
+          "factor": "206.0659630606860158311345646",
+          "modeled_serial_call_seconds": "86778.42962360180312847934035"
+        },
+        "verification": {
+          "projected_usd": "0.438100000",
+          "projected_units": "5000",
+          "factor": "200",
+          "modeled_serial_call_seconds": "13800.1087837999874600"
+        },
+        "grouping": {
+          "projected_usd": "0.000442550",
+          "projected_units": "1",
+          "factor": "1",
+          "modeled_serial_call_seconds": "1.939552707999951"
+        },
+        "memo": {
+          "projected_usd": "0.000862175",
+          "projected_units": "1",
+          "factor": "1",
+          "modeled_serial_call_seconds": "6.846922333000066"
+        },
+        "extraction": {
+          "projected_usd": null,
+          "reason": "No fully priced pilot measurement for this stage"
+        }
+      },
+      "known_projected_api_usd": "4.698521119976253298153034300",
+      "projected_api_usd": null,
+      "unmodeled_stages": [
+        "extraction"
+      ],
+      "budget_usd": "1.00",
+      "exceeds_budget": true,
+      "modeled_serial_call_seconds": null,
+      "time_note": "Model of summed API durations for ONE worker only; excludes queueing/local overhead. Not measured full-run wall time.",
+      "evidence_kind": "real_pilot",
+      "known_modeled_stage_wall_hours": "34.04018858874852922526201994"
+    },
+    {
+      "name": "scope_100k_conservative_more_retries_and_verification",
+      "source_rows": 100013,
+      "stages": {
+        "classification": {
+          "projected_usd": "5.110939673971503957783641159",
+          "projected_units": "78099",
+          "factor": "247.2791556728232189973614775",
+          "modeled_serial_call_seconds": "104134.1155483221637541752084"
+        },
+        "verification": {
+          "projected_usd": "1.05144000000",
+          "projected_units": "10000",
+          "factor": "480.00",
+          "modeled_serial_call_seconds": "33120.261081119969904000"
+        },
+        "grouping": {
+          "projected_usd": "0.00053106000",
+          "projected_units": "1",
+          "factor": "1.20",
+          "modeled_serial_call_seconds": "2.32746324959994120"
+        },
+        "memo": {
+          "projected_usd": "0.00103461000",
+          "projected_units": "1",
+          "factor": "1.20",
+          "modeled_serial_call_seconds": "8.21630679960007920"
+        },
+        "extraction": {
+          "projected_usd": null,
+          "reason": "No fully priced pilot measurement for this stage"
+        }
+      },
+      "known_projected_api_usd": "6.163945343971503957783641159",
+      "projected_api_usd": null,
+      "unmodeled_stages": [
+        "extraction"
+      ],
+      "budget_usd": "1.00",
+      "exceeds_budget": true,
+      "modeled_serial_call_seconds": null,
+      "time_note": "Model of summed API durations for ONE worker only; excludes queueing/local overhead. Not measured full-run wall time.",
+      "evidence_kind": "real_pilot",
+      "known_modeled_stage_wall_hours": "45.46081281756490373698109061"
+    },
+    {
+      "name": "scope_100k_no_text_reuse",
+      "source_rows": 100013,
+      "stages": {
+        "classification": {
+          "projected_usd": "5.453483905013192612137203166",
+          "projected_units": "100000",
+          "factor": "263.8522427440633245382585752",
+          "modeled_serial_call_seconds": "111113.3684472295459973614776"
+        },
+        "verification": {
+          "projected_usd": "0.438100000",
+          "projected_units": "5000",
+          "factor": "200",
+          "modeled_serial_call_seconds": "13800.1087837999874600"
+        },
+        "grouping": {
+          "projected_usd": "0.000442550",
+          "projected_units": "1",
+          "factor": "1",
+          "modeled_serial_call_seconds": "1.939552707999951"
+        },
+        "memo": {
+          "projected_usd": "0.000862175",
+          "projected_units": "1",
+          "factor": "1",
+          "modeled_serial_call_seconds": "6.846922333000066"
+        },
+        "extraction": {
+          "projected_usd": null,
+          "reason": "No fully priced pilot measurement for this stage"
+        }
+      },
+      "known_projected_api_usd": "5.892888630013192612137203166",
+      "projected_api_usd": null,
+      "unmodeled_stages": [
+        "extraction"
+      ],
+      "budget_usd": "1.00",
+      "exceeds_budget": true,
+      "modeled_serial_call_seconds": null,
+      "time_note": "Model of summed API durations for ONE worker only; excludes queueing/local overhead. Not measured full-run wall time.",
+      "evidence_kind": "real_pilot",
+      "known_modeled_stage_wall_hours": "42.50734955760328882655196422"
+    }
+  ],
+  "exclusions": [
+    "one long-text extraction",
+    "larger-scope local processing and infrastructure",
+    "dashboard/backend/database hosting"
+  ],
+  "note": "Forward total-scope projections, not incremental remaining bills. Initial 100k projection remains preserved separately; 10k refresh is still required."
+}

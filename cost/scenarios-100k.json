@@ -1,0 +1,128 @@
+[
+  {
+    "name": "scope_100k_base_exact_reuse",
+    "source_rows": 100013,
+    "budget_usd": "1.00",
+    "stages": {
+      "classification": {
+        "pilot_units": 100,
+        "projected_units": 78099,
+        "attempts_multiplier": "1"
+      },
+      "verification": {
+        "pilot_units": 5,
+        "projected_units": 5000,
+        "attempts_multiplier": "1"
+      },
+      "grouping": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      },
+      "memo": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      },
+      "extraction": {
+        "pilot_units": 0,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      }
+    },
+    "assumptions": {
+      "workers": 1,
+      "verification_fraction": 0.05,
+      "strong_model_fallback_fraction": 0,
+      "fallbacks": "Disabled in all scenarios until quality evidence justifies routing.",
+      "unmeasured_extraction": "One unique selected text exceeds 600 characters; absent from fixed pilot.",
+      "budget": "Current US$1 experiment budget is unchanged; no 100k paid run started.",
+      "time": "Single-worker extrapolation from observed stage wall times; excludes unmeasured large-scope local processing, extraction and hosting.",
+      "scope": "100,000 selected nonempty IDs plus 13 empty quarantines; full source ingestion remains 660,622."
+    }
+  },
+  {
+    "name": "scope_100k_conservative_more_retries_and_verification",
+    "source_rows": 100013,
+    "budget_usd": "1.00",
+    "stages": {
+      "classification": {
+        "pilot_units": 100,
+        "projected_units": 78099,
+        "attempts_multiplier": "1.20"
+      },
+      "verification": {
+        "pilot_units": 5,
+        "projected_units": 10000,
+        "attempts_multiplier": "1.20"
+      },
+      "grouping": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1.20"
+      },
+      "memo": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1.20"
+      },
+      "extraction": {
+        "pilot_units": 0,
+        "projected_units": 1,
+        "attempts_multiplier": "1.20"
+      }
+    },
+    "assumptions": {
+      "workers": 1,
+      "verification_fraction": 0.1,
+      "strong_model_fallback_fraction": 0,
+      "fallbacks": "Disabled in all scenarios until quality evidence justifies routing.",
+      "unmeasured_extraction": "One unique selected text exceeds 600 characters; absent from fixed pilot.",
+      "budget": "Current US$1 experiment budget is unchanged; no 100k paid run started.",
+      "time": "Single-worker extrapolation from observed stage wall times; excludes unmeasured large-scope local processing, extraction and hosting.",
+      "scope": "100,000 selected nonempty IDs plus 13 empty quarantines; full source ingestion remains 660,622."
+    }
+  },
+  {
+    "name": "scope_100k_no_text_reuse",
+    "source_rows": 100013,
+    "budget_usd": "1.00",
+    "stages": {
+      "classification": {
+        "pilot_units": 100,
+        "projected_units": 100000,
+        "attempts_multiplier": "1"
+      },
+      "verification": {
+        "pilot_units": 5,
+        "projected_units": 5000,
+        "attempts_multiplier": "1"
+      },
+      "grouping": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      },
+      "memo": {
+        "pilot_units": 1,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      },
+      "extraction": {
+        "pilot_units": 0,
+        "projected_units": 1,
+        "attempts_multiplier": "1"
+      }
+    },
+    "assumptions": {
+      "workers": 1,
+      "verification_fraction": 0.05,
+      "strong_model_fallback_fraction": 0,
+      "fallbacks": "Disabled in all scenarios until quality evidence justifies routing.",
+      "unmeasured_extraction": "One unique selected text exceeds 600 characters; absent from fixed pilot.",
+      "budget": "Current US$1 experiment budget is unchanged; no 100k paid run started.",
+      "time": "Single-worker extrapolation from observed stage wall times; excludes unmeasured large-scope local processing, extraction and hosting.",
+      "scope": "100,000 selected nonempty IDs plus 13 empty quarantines; full source ingestion remains 660,622."
+    }
+  }
+]

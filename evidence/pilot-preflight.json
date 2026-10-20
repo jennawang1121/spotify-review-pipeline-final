@@ -1,0 +1,14 @@
+{
+  "mode": "preflight-only",
+  "paid_calls": 0,
+  "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "input_records": 100,
+  "phase": "initial",
+  "run_dir": "/Users/wangjenna/Documents/ChatGPT/AgenticAI_Class 2/spotify-pipeline/runs/pilot-live",
+  "classification_model": "jev-1.13.0",
+  "language_model": "gpt-6-luna",
+  "verification_sample_size": 5,
+  "strong_model_fallbacks": 0,
+  "output_token_cap": 1200,
+  "note": "No requests dispatched. --execute-paid and --budget-usd are required for real execution."
+}

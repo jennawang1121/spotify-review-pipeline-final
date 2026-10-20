@@ -1,0 +1,18 @@
+{
+  "snapshot": {
+    "statuses": {
+      "pending": 73305,
+      "completed": 26695,
+      "quarantined": 13
+    },
+    "cache_reused_records": 18203,
+    "completed_provenance": {
+      "provider_response": 26695
+    },
+    "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+    "official_contract_validated": false
+  },
+  "remaining_unique_texts": 69607,
+  "new_api_calls": 0,
+  "paid_final_run_started": false
+}

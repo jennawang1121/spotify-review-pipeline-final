@@ -1,0 +1,9 @@
+{
+  "evidence_kind": "real_pilot_offline_replay",
+  "rate_doubling_doubles_api_subtotal": true,
+  "rate_change_preserves_measured_time": true,
+  "rate_change_preserves_local_compute": true,
+  "cold_original_usd": "0.007073404",
+  "cold_double_rate_usd": "0.014146808",
+  "new_api_calls": 0
+}

@@ -1,0 +1,8 @@
+{
+  "state": "starting",
+  "user_approved_project_api_cap_usd": "7.00",
+  "final_run_cap_usd": "6.00",
+  "seed_completed": 26695,
+  "target_nonempty": 100000,
+  "quarantined_empty": 13
+}

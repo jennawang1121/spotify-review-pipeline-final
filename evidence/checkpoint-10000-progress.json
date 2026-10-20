@@ -1,0 +1,27 @@
+{
+  "state": "completed_and_warm_replayed",
+  "result": {
+    "status": "completed",
+    "new_unique_results": 0,
+    "run_dir": "runs/checkpoint-10000",
+    "human_memo_review_required": true
+  },
+  "warm": {
+    "status": "completed",
+    "new_unique_results": 0,
+    "run_dir": "runs/checkpoint-10000",
+    "human_memo_review_required": true
+  },
+  "budget_cap_usd": "0.80",
+  "snapshot": {
+    "statuses": {
+      "completed": 10000
+    },
+    "cache_reused_records": 1552,
+    "completed_provenance": {
+      "provider_response": 10000
+    },
+    "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+    "official_contract_validated": false
+  }
+}

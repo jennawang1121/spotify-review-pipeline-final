@@ -1,0 +1,45 @@
+{
+  "10000": {
+    "status": {
+      "statuses": {
+        "completed": 1437,
+        "pending": 8563
+      },
+      "cache_reused_records": 958,
+      "completed_provenance": {
+        "provider_response": 1437
+      },
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "official_contract_validated": false
+    },
+    "source_rows": 10000,
+    "unique_nonempty_texts": 8448,
+    "unique_results_imported": 479,
+    "new_api_calls": 0,
+    "paid_execution_started": false,
+    "source_experiment": "runs/checkpoint-500",
+    "original_costs_remain_in_source_experiments": true
+  },
+  "100000": {
+    "status": {
+      "statuses": {
+        "pending": 89523,
+        "completed": 10477,
+        "quarantined": 13
+      },
+      "cache_reused_records": 9998,
+      "completed_provenance": {
+        "provider_response": 10477
+      },
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "official_contract_validated": false
+    },
+    "source_rows": 100013,
+    "unique_nonempty_texts": 78099,
+    "unique_results_imported": 479,
+    "new_api_calls": 0,
+    "paid_execution_started": false,
+    "source_experiment": "runs/checkpoint-500",
+    "original_costs_remain_in_source_experiments": true
+  }
+}

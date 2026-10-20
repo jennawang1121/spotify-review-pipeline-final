@@ -1,0 +1,9 @@
+{
+  "source_experiment": "../pilot-benchmark",
+  "source_measurement": "initial-1b0438bf5b944a9cb4f27bdbdda9459c",
+  "completed_source_ids_reused": 112,
+  "original_unique_classifications_reused": 100,
+  "new_api_calls_for_import": 0,
+  "source_calls_sha256": "49060ed97d2f4f06112b3b998cb0d6d560d27f9fbf671ff8bc4301b130904520",
+  "scope_note": "Prior calls are historical costs, not new checkpoint calls. Carry original response/call evidence into final export."
+}

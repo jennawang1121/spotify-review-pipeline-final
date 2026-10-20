@@ -1,0 +1,27 @@
+{
+  "note": "Code snapshot for the 500 development checkpoint and 100k scope preparation; not a git commit or completion claim.",
+  "files": {
+    "pipeline/__init__.py": "eab194815bd7fc720899105d229c93e46d4cd4da3df8157cdb885c17e228813d",
+    "pipeline/__main__.py": "d588978e606d329112dc1990c3b6a69a6ce532ff97f6957ed42ae1f42d17f3f2",
+    "pipeline/budget.py": "29cb568c314d61a2a08cd430dcf4d514c16a553c3154e29a2d73efb757fe947c",
+    "pipeline/checkpoint_report.py": "47baead8c854fd24ce14e4eeb050da7ed4404e6670bc42ee58db394729e771df",
+    "pipeline/common.py": "e1bb8fc4ede3fdf124bc600f8d78677ad14d5839d5f3c1e7a0a0418ed4413130",
+    "pipeline/contract.py": "6a089941085a4b1c9c160e41ae697ae252c0bd5d258c9b86c9eafbd2f9221f7d",
+    "pipeline/costing.py": "7cf35ccb967b450192e1068d4b46e89d666a8044f4601f57699c8584da52ab87",
+    "pipeline/evaluation.py": "f2b5d3ba0950ae18d46d52284cb2ee6c136f4efbc4971d9860427e87a880f9bf",
+    "pipeline/golden_workbook.py": "22d59ea3a188f685b5428a478ddd96152fabffe93171936476ba7e68fc39ac69",
+    "pipeline/jev.py": "de1536707fadb9cdf6156d14a10bfba38de12fb93893c4432aa676d6429a8f1a",
+    "pipeline/providers.py": "6fd9589ef4fd93dbcd724225de430e07b8578303d3fde9f1a4fbd438fbf2dbbb",
+    "pipeline/ranking.py": "73ade8593c88cc683bf99e954a7d80367a9fcf237983193b383872067c713c30",
+    "pipeline/runner.py": "240e3b94b21994e9995a27e91f6af803b83e5111b237e569fc889468e47b4889",
+    "pipeline/scope.py": "fdacc0f785b4dba7fd55b5c69bd8b271bb07676f32461b8d0f0d7944b23473a1",
+    "pipeline/store.py": "854f978c0ed748f721ff791d3a73496fcad5f7b2354a2442aa0a43ffd9499b19",
+    "pipeline/system_checks.py": "679a5bbede675f9ff6a31ff50fca989ee13b45d1a7ff7c9714eaaf72cd063e08",
+    "prompts/enrichment.txt": "ebf1b0f5f4edf72a1a57e967196c82b23068cbe6e544cd8cc3480a8cb3830219",
+    "prompts/grouping.txt": "bc45e414ac61652cca4394b460b540b00e05d24074c0891bcade436a3c3dccc3",
+    "prompts/memo.txt": "e82449c7bdb17784ee59a7553786a3b2226a1fe3f5ae35cf676931969fa101a9",
+    "prompts/verification.txt": "64470679435c11e2afd2e94e31287a6a991bd85051d62af083c6b306640d9704",
+    "config.json": "2e2229281d7bf241b123c0f4c4df112204fb7dd6e30d25795662e8a03cbcd5a2",
+    "taxonomy.json": "2c95b05f40a1738dbdf80835dff8d197998f426d4ef1a68f2842286dc9bbc33a"
+  }
+}

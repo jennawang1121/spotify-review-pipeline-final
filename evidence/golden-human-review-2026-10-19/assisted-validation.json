@@ -1,0 +1,22 @@
+{
+  "output_sha256": "51ed67d745ba6ab015513c541f307657d3a4abc599dfd151021aaa9e7d2f990e",
+  "valid_complete_rows": 50,
+  "remaining_blank": null,
+  "verbatim_quotes": 50,
+  "zero_to_one": 25,
+  "generic_dislike_to_two": 4,
+  "unchanged_label_fields": [
+    "topic",
+    "intent",
+    "sentiment",
+    "needs_review"
+  ],
+  "progress_formulas_recalculated": true,
+  "supporting_sheet_xml_unchanged": {
+    "xl/worksheets/sheet2.xml": false,
+    "xl/worksheets/sheet3.xml": false
+  },
+  "provenance": "AI-assisted quotes and authorized corrections, not entirely independent human labels",
+  "supporting_sheet_values_and_formulas_unchanged": true,
+  "student_confirmed_C24": "usability"
+}

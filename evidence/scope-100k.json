@@ -1,0 +1,37 @@
+{
+  "status": "prepared_not_classified",
+  "source_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "source_rows_ingested": 660622,
+  "analysis_rows": 100013,
+  "nonempty_classification_target": 100000,
+  "empty_text_quarantines": 13,
+  "nonempty_outside_analysis_scope": 560609,
+  "unique_nonempty_texts": 78099,
+  "exact_text_reuse_rows": 21901,
+  "long_text_unique_extractions": 1,
+  "analysis_sha256": "b87ca3b10e8ff88d3a4a203f69ae9a9dc8c36fa4ed67ea8e1e3dda4363808842",
+  "source_hashes_sha256": "2e313ce0dcdc2f48cfafb4a53cc6e2c1d4d3d2ae98d7262ab7bb4aeea19a4432",
+  "seed": "berkeley-fall-2026-assignment-5-v1",
+  "selection": "Lowest SHA-256(seed + ':' + review_id) among nonempty rows; retain source order; include all empty rows separately.",
+  "fixed_samples": {
+    "cost_100.csv": {
+      "total": 100,
+      "included": 100
+    },
+    "checkpoint_500.csv": {
+      "total": 500,
+      "included": 500
+    },
+    "analysis_10000.csv": {
+      "total": 10000,
+      "included": 10000
+    },
+    "golden_50_to_label.csv": {
+      "total": 50,
+      "included": 50
+    }
+  },
+  "human_answers_read": false,
+  "new_api_calls": 0,
+  "limitations": "A deterministic sample of historical self-selected reviews; sample totals are not full-source totals. Outside-scope reviews remain in the full ingestion store and are not claimed as classified."
+}

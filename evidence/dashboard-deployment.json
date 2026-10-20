@@ -1,0 +1,18 @@
+{
+  "id": "appgdep_6ac86cf923248191bb907d8219ef5c5d",
+  "project_id": "appgprj_6ac86ab4db388191978f0a098f4b8a4b",
+  "title": "Spotify Review Evidence",
+  "version_id": "appgprj_6ac86ab4db388191978f0a098f4b8a4b~appgver_156f8b5003c88191a088e53b652683a8",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://spotify-review-evidence.jenna851121.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ac86ab4db388191978f0a098f4b8a4b",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-09T04:26:40.703079+00:00",
+  "access": "owner-private",
+  "data_scope": "500-review development checkpoint",
+  "new_model_calls": 0
+}

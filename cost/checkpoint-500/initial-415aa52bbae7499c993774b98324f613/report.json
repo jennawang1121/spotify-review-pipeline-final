@@ -1,0 +1,100 @@
+{
+  "evidence_kind": "real_pilot",
+  "measurement": {
+    "evidence_kind": "real_pilot",
+    "run_id": "initial-415aa52bbae7499c993774b98324f613",
+    "phase": "initial",
+    "outcome": "completed",
+    "input_records": 500,
+    "run_kind": "development_checkpoint",
+    "completed_records": 500,
+    "pending_records": 0,
+    "quarantined_records": 0,
+    "unique_texts": 479,
+    "new_unique_results": 379,
+    "input_sha256": "a94e31663ee7b7eaa77e23b7a8425b530cc0c866ed5e714953172a0afef6a12f",
+    "wall_seconds": 605.62329475,
+    "stage_wall_seconds": {
+      "ingestion": 0.004325374999999999,
+      "enrichment": 527.491640834,
+      "verification": 69.18879766600003,
+      "grouping_and_ranking": 1.987497666999957,
+      "memo": 6.8589137080000455
+    },
+    "local_compute_usd": null,
+    "result_cache_hits": 112,
+    "downstream_response_cache_hits": 0,
+    "budget_usd": "0.50",
+    "budget": {
+      "spent_usd": "0.024163929",
+      "reserved_usd": "0",
+      "unresolved_attempts": 0,
+      "over_limit": false
+    },
+    "max_workers": 1,
+    "max_output_tokens": 1200,
+    "strong_model_fallback_fraction": 0
+  },
+  "known_api_usd": "0.024163929",
+  "unknown_charge_attempts": 0,
+  "total_api_usd": "0.024163929",
+  "stages": {
+    "classification": {
+      "known_usd": "0.020668704",
+      "unknown_attempts": 0,
+      "attempts": 379,
+      "summed_call_seconds": "421.11966641499997933",
+      "billing_tokens": {
+        "input": 492112,
+        "cached_input": 0,
+        "cache_write": 0,
+        "output": 85096
+      }
+    },
+    "verification": {
+      "known_usd": "0.002190500",
+      "unknown_attempts": 0,
+      "attempts": 25,
+      "summed_call_seconds": "69.0005439189999373",
+      "billing_tokens": {
+        "input": 15360,
+        "cached_input": 0,
+        "cache_write": 0,
+        "output": 1309
+      }
+    },
+    "grouping": {
+      "known_usd": "0.000442550",
+      "unknown_attempts": 0,
+      "attempts": 1,
+      "summed_call_seconds": "1.939552707999951",
+      "billing_tokens": {
+        "input": 3,
+        "cached_input": 0,
+        "cache_write": 3002,
+        "output": 134
+      }
+    },
+    "memo": {
+      "known_usd": "0.000862175",
+      "unknown_attempts": 0,
+      "attempts": 1,
+      "summed_call_seconds": "6.846922333000066",
+      "billing_tokens": {
+        "input": 3,
+        "cached_input": 0,
+        "cache_write": 3275,
+        "output": 905
+      }
+    }
+  },
+  "api_usd_per_1000_inputs": "0.048327858",
+  "api_usd_per_completed": "0.000048327858",
+  "completed_per_second": "0.8255957198713747131669426261",
+  "local_compute_usd": null,
+  "notes": [
+    "Summed call durations are not end-to-end wall time.",
+    "Reasoning already billed in output must not be added again.",
+    "Incomplete charge coverage makes total API spend unknown."
+  ]
+}

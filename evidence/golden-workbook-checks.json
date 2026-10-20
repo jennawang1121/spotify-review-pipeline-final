@@ -1,0 +1,15 @@
+{
+  "all_50_source_ids_and_texts_exact": true,
+  "all_350_label_cells_blank": true,
+  "all_six_original_source_fields_exact": true,
+  "validation_controls": 5,
+  "pane": {
+    "xSplit": "2",
+    "ySplit": "5",
+    "topLeftCell": "C6",
+    "activePane": "bottomRight",
+    "state": "frozen"
+  },
+  "formula_error_scan_matches": 0,
+  "visual_review": "All three worksheets inspected; input area and right-side columns rendered."
+}

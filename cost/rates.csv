@@ -1,0 +1,8 @@
+provider,model,tier,category,usd_per_unit,unit_tokens,currency,checked_on,source_url
+typesafe,jev-1.13.0,standard,input,0.042,1000000,USD,2026-10-05,https://docs.typesafe.ai/models
+typesafe,jev-1.13.0,standard,output,0,1000000,USD,2026-10-05,https://docs.typesafe.ai/models
+openai,gpt-6-luna,standard,input,0.10,1000000,USD,2026-10-05,https://developers.openai.com/api/docs/models/gpt-6-luna
+openai,gpt-6-luna,standard,cached_input,0.01,1000000,USD,2026-10-05,https://developers.openai.com/api/docs/models/gpt-6-luna
+openai,gpt-6-luna,standard,cache_write,0.125,1000000,USD,2026-10-05,https://developers.openai.com/api/docs/models/gpt-6-luna
+openai,gpt-6-luna,standard,output,0.50,1000000,USD,2026-10-05,https://developers.openai.com/api/docs/models/gpt-6-luna
+

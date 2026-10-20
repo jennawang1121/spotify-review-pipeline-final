@@ -1,0 +1,55 @@
+{
+  "evidence_kind": "real_model_test_on_synthetic_inputs",
+  "measurement": {
+    "evidence_kind": "real_model_test_on_synthetic_inputs",
+    "input_records": 8,
+    "completed_records": 8,
+    "wall_seconds": 9.959769583,
+    "local_compute_usd": null,
+    "count_unit": "provider-case outcomes, not business review IDs",
+    "budget": {
+      "spent_usd": "0.00059824",
+      "reserved_usd": "0",
+      "unresolved_attempts": 0,
+      "over_limit": false
+    }
+  },
+  "known_api_usd": "0.000598240",
+  "unknown_charge_attempts": 0,
+  "total_api_usd": "0.000598240",
+  "stages": {
+    "injection_classification": {
+      "known_usd": "0.000221340",
+      "unknown_attempts": 0,
+      "attempts": 4,
+      "summed_call_seconds": "0.62369933400000056",
+      "billing_tokens": {
+        "input": 5270,
+        "cached_input": 0,
+        "cache_write": 0,
+        "output": 896
+      }
+    },
+    "injection_verification": {
+      "known_usd": "0.000376900",
+      "unknown_attempts": 0,
+      "attempts": 4,
+      "summed_call_seconds": "7.4552557069999992",
+      "billing_tokens": {
+        "input": 2549,
+        "cached_input": 0,
+        "cache_write": 0,
+        "output": 244
+      }
+    }
+  },
+  "api_usd_per_1000_inputs": "0.074780000",
+  "api_usd_per_completed": "0.000074780",
+  "completed_per_second": "0.8032314335519301942871061297",
+  "local_compute_usd": null,
+  "notes": [
+    "Summed call durations are not end-to-end wall time.",
+    "Reasoning already billed in output must not be added again.",
+    "Incomplete charge coverage makes total API spend unknown."
+  ]
+}

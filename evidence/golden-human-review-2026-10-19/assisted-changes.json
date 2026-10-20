@@ -1,0 +1,794 @@
+{
+  "source_sha256": "b3ebf2229230a12111f1ac921c50be571eacd0a01c4fbdd6b855a8a9f7f0cf8d",
+  "edits": [
+    {
+      "cell": "H6",
+      "before": "Spotify",
+      "after": "[\"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I6",
+      "before": "",
+      "after": "Staff must be full of mentally ill kool-aid heads. Banning conservative music that speaks truth. Spotify is doing all they can to protect pedophiles, by banning Christian songs discussing the path the devil leads you down. Pride is a sin.",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E7",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H7",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I7",
+      "before": "",
+      "after": "Great app use it every chance I get",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E8",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H8",
+      "before": "Spotify",
+      "after": "[\"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I8",
+      "before": "",
+      "after": "It's really an amazing experience with Spotify...I love it🥰",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H9",
+      "before": "Ads",
+      "after": "[\"Ads\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I9",
+      "before": "",
+      "after": "Ads were okay, but limited functionality..it's just too much",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E10",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H10",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I10",
+      "before": "",
+      "after": "I just loved it",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E11",
+      "before": "5",
+      "after": 2,
+      "reason": "User instructed generic dislike/criticism without specified functional restriction -> 2"
+    },
+    {
+      "cell": "H11",
+      "before": "App",
+      "after": "[\"application\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I11",
+      "before": "",
+      "after": "Hate this application 🤮🤮🤮🤮🤮🤮",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E12",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H12",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I12",
+      "before": "",
+      "after": "Excellent",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E13",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H13",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I13",
+      "before": "",
+      "after": "good ❤❤🔊🔊",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E14",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H14",
+      "before": "Spotify",
+      "after": "[\"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I14",
+      "before": "",
+      "after": "Spotify is awesome and and very diverse :)",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E15",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H15",
+      "before": "Premium",
+      "after": "[\"Premium\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I15",
+      "before": "",
+      "after": "Duo Premium .... No ads at all!",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H16",
+      "before": "App",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I16",
+      "before": "",
+      "after": "Very good but wen I play my song it o ly plays a little bit then it stops I updated my phone and it worked but it happend again they need to fix this issue",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E17",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H17",
+      "before": "App, Spotify",
+      "after": "[\"app\", \"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I17",
+      "before": "",
+      "after": "I reached out to Spotify Support and with some help from Sarah I was able to get the app working again.",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H18",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I18",
+      "before": "",
+      "after": "This app is bad work",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E19",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H19",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I19",
+      "before": "",
+      "after": "Great...",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E20",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H20",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I20",
+      "before": "",
+      "after": "Super",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H21",
+      "before": "Ads",
+      "after": "[\"ads\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I21",
+      "before": "",
+      "after": "I like it but god I hate it when the music Interrupts my ads",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E22",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H22",
+      "before": "Spotify",
+      "after": "[\"spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I22",
+      "before": "",
+      "after": "Lhat ng song nasa spotify",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H23",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I23",
+      "before": "",
+      "after": "Avtar sungh",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H24",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I24",
+      "before": "",
+      "after": "asem, lirik nya kdang gaada kek mana??",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E25",
+      "before": "5",
+      "after": 2,
+      "reason": "User instructed generic dislike/criticism without specified functional restriction -> 2"
+    },
+    {
+      "cell": "H25",
+      "before": "App",
+      "after": "[\"application\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I25",
+      "before": "",
+      "after": "Hate This application 👎",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H26",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I26",
+      "before": "",
+      "after": "We are boycotting Swedish app in our protest against Sweden for their desrecpect & desceration of our holy book Qur'an",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E27",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H27",
+      "before": "Spotify",
+      "after": "[\"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I27",
+      "before": "",
+      "after": "I LOVE that I was able to put in only a few songs I like and Spotify gave me recommendations for an AWESOME Playlist...!!!",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E28",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H28",
+      "before": "App, Spotify",
+      "after": "[\"Apps\", \"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I28",
+      "before": "",
+      "after": "I absolutely love Spotify, to me is one of the best Music Apps. Great job Spotify!!!",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H29",
+      "before": "Ad",
+      "after": "[\"ad\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I29",
+      "before": "",
+      "after": "Please ye ads ko thoda kumm Karo harr ek song ke baad ad 🙏🙄",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H30",
+      "before": "App, Spotify",
+      "after": "[\"spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I30",
+      "before": "",
+      "after": "Very poor updates as we cannot playback the songs and most bad updates are happening it is affecting the spotify quality",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E31",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H31",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I31",
+      "before": "",
+      "after": "Awesomeness 👌 👏 👍 😍 💖",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H32",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I32",
+      "before": "",
+      "after": "Bheekhmangon",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E33",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H33",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I33",
+      "before": "",
+      "after": "Unconditional love, Stoli Canales",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H34",
+      "before": "Premium, App",
+      "after": "[\"Premium\", \"App\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I34",
+      "before": "",
+      "after": "Deleting this App. The new update suck, we can't choose our fvrt songs after some clicks, we can't CHOOSE song after a song played, and we can't turn off shuffle option.",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H35",
+      "before": "Premium, App",
+      "after": "[\"premium\", \"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I35",
+      "before": "",
+      "after": "It's my best music app but now it's not...everything basic features is premium....",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E36",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H36",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I36",
+      "before": "",
+      "after": "I hate this app and sweden .I love islam",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E37",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H37",
+      "before": "App, Spotify",
+      "after": "[\"app\", \"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I37",
+      "before": "",
+      "after": "What is happening with Spotify?? Recently I'm trying to play a song but it doesn't working. So I unstalled and thn again install it now I can't even open the app.. Just showing try again?? I really loved Spotify but this making me to rate it 1 star plz fix the problm as fast as u can",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H38",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I38",
+      "before": "",
+      "after": "Are you out of your mind? This is dangerous! Listening to music in a normal volume and suddenly an add starts and my ears feel like they explode!! Stop this BS, or you're gonna destroy someones ears.",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H39",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I39",
+      "before": "",
+      "after": "Beth, we all got to give me a free dollar to go with 3 months, bro I can't be like",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E40",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H40",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I40",
+      "before": "",
+      "after": "Good",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E41",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H41",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I41",
+      "before": "",
+      "after": "Good app!",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E42",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H42",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I42",
+      "before": "",
+      "after": "Nice app, very less advertising",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H43",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I43",
+      "before": "",
+      "after": "1-Lyrics not getting loaded, 2-can't go back to or start song where to wanted. Pathetic update",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E44",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H44",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I44",
+      "before": "",
+      "after": "Phenomenal",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E45",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H45",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I45",
+      "before": "",
+      "after": "Good",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H46",
+      "before": "Spotify",
+      "after": "[\"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I46",
+      "before": "",
+      "after": "The only thing Spotify lacks is the ability to organize saved \nalbums/artists into collections.",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E47",
+      "before": "5",
+      "after": 2,
+      "reason": "User instructed generic dislike/criticism without specified functional restriction -> 2"
+    },
+    {
+      "cell": "H47",
+      "before": "App",
+      "after": "[\"application\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I47",
+      "before": "",
+      "after": "Worst application 👎👎👎",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H48",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I48",
+      "before": "",
+      "after": "I gave one star because I can't give any less than that. the new update is sooooooo annoying like I can't even play the songs that I like and I can't rewind songs what the heck",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E49",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H49",
+      "before": "Spotify",
+      "after": "[\"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I49",
+      "before": "",
+      "after": "I find Spotify very good, it finds and play whatever music you want and also adds songs that you might like, judging from your playlist if you choose to arrange one. 😊💃🎸🎶",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H50",
+      "before": "",
+      "after": "[]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I50",
+      "before": "",
+      "after": "paying for subscribing but unable to play in offline mode really?",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H51",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I51",
+      "before": "",
+      "after": "Worst app ever too much ad",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "H52",
+      "before": "Ads",
+      "after": "[\"ads\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I52",
+      "before": "",
+      "after": "Too expensive and the free version is pretty much unusable with constant ads... Every two or three songs.. Forget it",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E53",
+      "before": "5",
+      "after": 2,
+      "reason": "User instructed generic dislike/criticism without specified functional restriction -> 2"
+    },
+    {
+      "cell": "H53",
+      "before": "Spotify",
+      "after": "[\"Spotify\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I53",
+      "before": "",
+      "after": "This update very bad for everyone.old Spotify. we all want.",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E54",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H54",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I54",
+      "before": "",
+      "after": "I'm loving the experience with the app",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "E55",
+      "before": "0",
+      "after": 1,
+      "reason": "User instructed severity 0 -> 1"
+    },
+    {
+      "cell": "H55",
+      "before": "App",
+      "after": "[\"app\"]",
+      "reason": "Format student entities as JSON; use exact source spelling/case; omit names absent from source; blank becomes []"
+    },
+    {
+      "cell": "I55",
+      "before": "",
+      "after": "best app ever",
+      "reason": "AI-assisted verbatim extraction; existing student labels not treated as evidence of text meaning"
+    },
+    {
+      "cell": "A4",
+      "before": "",
+      "after": "引用由 AI 協助摘錄；嚴重程度與名稱依指示修整。C24 主題仍待填。",
+      "reason": "Disclose assistance and outstanding field"
+    }
+  ],
+  "student_label_fields_unchanged": [
+    "topic",
+    "intent",
+    "sentiment",
+    "needs_review"
+  ],
+  "remaining_missing_field": null,
+  "evaluation_provenance": "Student labels with disclosed assistant severity corrections, entity normalization and assistant-generated quotes; not fully independently human-labelled across all fields.",
+  "student_confirmed_C24": "usability"
+}

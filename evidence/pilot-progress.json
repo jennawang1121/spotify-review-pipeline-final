@@ -1,0 +1,139 @@
+{
+  "observed_on": "2026-10-06",
+  "status": "checkpoint_500_complete_human_evaluation_pending",
+  "project_spend_including_development": {
+    "known_api_subtotal_usd": "0.040729119",
+    "unknown_charge_attempts": 6,
+    "total_api_usd": null
+  },
+  "quality_summary": {
+    "sample_size": 5,
+    "sample_seed": 20261005,
+    "scope": "Independent model agreement on a development sample; NOT accuracy or human golden evaluation.",
+    "agreement_counts": {
+      "topic": 5,
+      "intent": 5,
+      "severity": 5,
+      "needs_review": 4
+    },
+    "any_categorical_disagreement_count": 1,
+    "sentiment_mean_absolute_difference": 0.10099999999999998,
+    "sentiment_within_0_25_count": 5,
+    "repeat_classification_agreement_counts": {
+      "topic": 98,
+      "intent": 100,
+      "severity": 98,
+      "needs_review": 96
+    },
+    "repeat_comparison_size": 100,
+    "needs_review_count": 54,
+    "intent_counts": {
+      "unclear": 6,
+      "praise": 40,
+      "complaint": 42,
+      "cancellation": 10,
+      "request": 2
+    }
+  },
+  "checks": {
+    "ranking_and_claims_replay_match": true,
+    "recovery_before_count": 42,
+    "recovery_after_count": 100,
+    "resume_reenrichment_of_before_ids": 0,
+    "recovery_video_available": false
+  },
+  "remaining": [
+    "human golden 50 labels and evaluation",
+    "inspect verifier/memo discrepancies with student review",
+    "recorded interruption/recovery demonstration",
+    "representative extraction timing and updated 10k cost/time forecast",
+    "10k checkpoint",
+    "100k valid nonempty classifications under a sufficient budget",
+    "public repository submission",
+    "public grader dashboard access and final 100k data update"
+  ],
+  "system_tests": {
+    "api_usd": "0.000598240",
+    "unknown_attempts": 0,
+    "calls": 8,
+    "evidence": "evals/system-checks/README.md"
+  },
+  "checkpoint_500_prepared": {
+    "completed_from_cache": 112,
+    "pending": 388,
+    "new_api_calls": 0
+  },
+  "checkpoint_500": {
+    "completed": 500,
+    "new_unique_classifications": 379,
+    "previously_completed_ids_reused": 112,
+    "new_api_calls": 406,
+    "new_api_usd": "0.024163929",
+    "wall_seconds": 605.62329475,
+    "warm_new_api_calls": 0,
+    "warm_new_api_usd": "0",
+    "summary": "evidence/checkpoint-500/summary.json"
+  },
+  "revised_final_scope": {
+    "nonempty_target": 100000,
+    "analysis_ids_including_empty": 100013,
+    "source_ids_ingested": 660622,
+    "unique_nonempty_texts": 78099,
+    "dashboard_backend_database_required": true
+  },
+  "next_checkpoints_prepared": {
+    "10000": {
+      "status": {
+        "statuses": {
+          "completed": 1437,
+          "pending": 8563
+        },
+        "cache_reused_records": 958,
+        "completed_provenance": {
+          "provider_response": 1437
+        },
+        "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+        "official_contract_validated": false
+      },
+      "source_rows": 10000,
+      "unique_nonempty_texts": 8448,
+      "unique_results_imported": 479,
+      "new_api_calls": 0,
+      "paid_execution_started": false,
+      "source_experiment": "runs/checkpoint-500",
+      "original_costs_remain_in_source_experiments": true
+    },
+    "100000": {
+      "status": {
+        "statuses": {
+          "pending": 89523,
+          "completed": 10477,
+          "quarantined": 13
+        },
+        "cache_reused_records": 9998,
+        "completed_provenance": {
+          "provider_response": 10477
+        },
+        "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+        "official_contract_validated": false
+      },
+      "source_rows": 100013,
+      "unique_nonempty_texts": 78099,
+      "unique_results_imported": 479,
+      "new_api_calls": 0,
+      "paid_execution_started": false,
+      "source_experiment": "runs/checkpoint-500",
+      "original_costs_remain_in_source_experiments": true
+    }
+  },
+  "dashboard": {
+    "url": "https://spotify-review-evidence.jenna851121.chatgpt.site",
+    "status": "deployed_private",
+    "data_scope": "500 completed development reviews",
+    "backend": "Cloudflare Worker",
+    "database": "D1",
+    "live_checks": "evidence/dashboard-live-checks.json",
+    "new_model_calls": 0,
+    "public_grader_access_pending": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "received_on": "2026-10-06",
+  "source": "docs/assignment-revised-2026-10-06.txt",
+  "sha256": "e7718fe7657b1c49f89d32b14d6ff399b8893e9db2e8f05dfd9995669ca300a3",
+  "authority": "User supplied revised instructor guidelines and explicitly confirmed the 100,000 alternative.",
+  "selected_nonempty_target": 100000,
+  "full_source_ingestion_retained": true,
+  "deployed_dashboard_backend_database_required": true,
+  "known_internal_conflict": "Revised overview and Definition of Done allow 100,000, but later prose and coverage formula still use 660,622/660,609. Original ZIP contract/helper retained unchanged; do not claim an official grade from local subset checking."
+}

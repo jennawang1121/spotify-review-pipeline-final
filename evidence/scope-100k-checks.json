@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "method": "Unmodified course checker reference(full, analysis), then compare every exported original-ID hash",
+  "source_profile_match": true,
+  "analysis_rows": 100013,
+  "hash_matches": 100013,
+  "classification_checked": false,
+  "new_api_calls": 0,
+  "note": "Source/scope consistency only; no classification completion or official grading claim."
+}

@@ -1,0 +1,7 @@
+{
+  "completed_cases": 8,
+  "core_pass_count": 8,
+  "planted_error_detected": true,
+  "run_dir": "/Users/wangjenna/Documents/ChatGPT/AgenticAI_Class 2/spotify-pipeline/runs/system-checks",
+  "limitations": "Small predeclared synthetic test suite; not a security guarantee or human accuracy estimate."
+}
