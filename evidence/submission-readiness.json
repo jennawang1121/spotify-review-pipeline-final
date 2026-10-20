@@ -7,19 +7,28 @@
   "checkpoint_10000_checker": "pass",
   "final_status_snapshot": {
     "statuses": {
-      "completed": 27873,
-      "pending": 72127,
+      "completed": 100000,
       "quarantined": 13
     },
-    "cache_reused_records": 18463,
+    "cache_reused_records": 21901,
     "completed_provenance": {
-      "provider_response": 27873
+      "provider_response": 100000
     },
     "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
     "official_contract_validated": false
   },
   "final_run_active": true,
   "offline_postprocessing_started": true,
-  "dashboard_public_permission": "pending",
-  "assignment_complete": false
+  "dashboard_public_permission": "approved_after_final_update_and_validation",
+  "assignment_complete": false,
+  "final_classification": {
+    "completed": 100000,
+    "quarantined": 13,
+    "verification": "running after cache-tail conflict repair",
+    "tests_passed": 45
+  },
+  "dashboard_publication_authorized": true,
+  "dashboard_publication_condition": "After final data update and validation",
+  "project_api_budget_usd": 7,
+  "dashboard_deployment_blocker": "Archive upload service HTTP 522; final import version not deployed"
 }

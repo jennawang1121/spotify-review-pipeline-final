@@ -167,11 +167,17 @@ def _run(input_csv, config, run_dir, phase, budget, execute_paid, stop_after, tr
     new_unique = 0
     def queue():
         # Fetch bounded pages; every imported result is committed before the next page.
+        admitted = set()
         while True:
-            batch = pending(db, config["label_config"], 100)
+            batch = [row for row in pending(db, config["label_config"], 100)
+                     if row["review_id"] not in admitted]
             if not batch:
                 return
-            yield from batch
+            for row in batch:
+                # A final singleton may still be in flight when the pair builder
+                # asks for another row. Never admit it a second time.
+                admitted.add(row["review_id"])
+                yield row
 
     def save_checkpoint(name="checkpoint_latest.json"):
         completed = [r["review_id"] for r in records(db, config["label_config"]) if r["status"] == "completed"]

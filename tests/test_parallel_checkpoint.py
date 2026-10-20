@@ -70,6 +70,27 @@ class ParallelCheckpointTests(unittest.TestCase):
             self.assertEqual(measurement['max_workers'], 2)
             self.assertEqual(measurement['budget']['reserved_usd'], '0')
 
+    def test_odd_queue_tail_is_dispatched_only_once(self):
+        config = configuration()
+        config['workers'] = 2
+        calls = []
+        def factory(*args):
+            def send(provider, payload):
+                calls.append(provider)
+                return mock_provider(provider, payload)
+            return Transport(*args, send=send)
+        with tempfile.TemporaryDirectory() as temporary, patch('pipeline.providers.time.sleep'):
+            root = Path(temporary)
+            source = root / 'invented.csv'
+            with source.open('w', newline='') as handle:
+                writer = csv.DictWriter(handle, fieldnames=SOURCE_FIELDS)
+                writer.writeheader()
+                for index in range(3):
+                    writer.writerow(dict(zip(SOURCE_FIELDS, [str(index), 'Invented complaint '+str(index), '1', '0', '', '2023-01-01'])))
+            result = run_checkpoint(source, config, root / 'run', 'initial', '1', True, None, factory, {})
+            self.assertEqual(result['status'], 'completed')
+            self.assertEqual(calls.count('typesafe'), 3)
+
     def test_exact_stop_resume_and_shared_ledger(self):
         self.exercise()
 

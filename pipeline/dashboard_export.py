@@ -6,7 +6,7 @@ from .common import ROOT, read_json, read_jsonl, write_json
 from .store import records
 
 
-def export(run_dir, summary_path, memo_path, destination):
+def export(run_dir, summary_path, memo_path, destination, external=False):
     root = Path(run_dir)
     config = read_json(root / "label_configuration.json")
     rows = list(records(root / "source.sqlite", config["label_config"]))
@@ -22,6 +22,11 @@ def export(run_dir, summary_path, memo_path, destination):
             "names": read_json(root / "issue_names.json"), "pack": read_json(root / "analysis/evidence_pack.json"),
             "taxonomy": config["taxonomy"], "verification": list(read_jsonl(root / "verification.jsonl")),
             "final_scope": read_json(ROOT / "evidence/scope-100k.json")}
+    if external:
+        seed['revision'] = 'final-100013-' + config['label_config'][:12]
+        seed['external_count'] = len(rows)
+        seed['metadata_version'] = 'final-reviewed-v1'
+        seed['reviews'] = []
     write_json(destination, seed)
     return {"records": len(rows), "new_model_calls": 0, "saved_to": str(destination)}
 
@@ -32,5 +37,6 @@ if __name__ == "__main__":
     p.add_argument("--summary", required=True)
     p.add_argument("--memo", required=True)
     p.add_argument("--out", required=True)
+    p.add_argument("--external", action="store_true")
     args = p.parse_args()
-    print(export(args.run_dir, args.summary, args.memo, args.out))
+    print(export(args.run_dir, args.summary, args.memo, args.out, args.external))

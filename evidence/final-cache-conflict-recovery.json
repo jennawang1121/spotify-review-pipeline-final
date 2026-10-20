@@ -1,0 +1,12 @@
+{
+  "cause": "Odd final queue singleton was fetched a second time while assembling a two-worker batch, before its first result was committed. Two successful responses differed, triggering immutable-cache conflict protection.",
+  "review_id": "c9096b94-79f0-4afa-8a16-78a1683b9aef",
+  "attempts": [
+    "a03d42ac62e14b71bb93fba7d0fc5678",
+    "a6fa519ab26645a0a47e06b14e975178"
+  ],
+  "resolution": "Preserve first saved prediction and both billed attempts. Track admitted IDs in each queue iterator; resume directly into verification because all 100000 records are complete.",
+  "tests_passed": 45,
+  "duplicate_call_cost_usd": "0.000058128",
+  "classifications_overwritten": 0
+}

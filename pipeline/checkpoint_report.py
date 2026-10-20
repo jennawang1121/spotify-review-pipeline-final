@@ -32,7 +32,7 @@ def summarize(run_dir, output):
                for name in ("ranking.csv", "claims.csv")}
     if not all(matches.values()):
         raise ValueError("Saved ranking or claims do not match deterministic replay.")
-    result = {"status": "completed_development_checkpoint", "new_api_calls_for_report": 0,
+    result = {"status": "completed_final_scope" if len(predictions) >= 100000 else "completed_development_checkpoint", "new_api_calls_for_report": 0,
               "source_rows": len(rows), "completed": len(predictions),
               "quarantined": sum(r["status"] == "quarantined" for r in rows),
               "label_config": config["label_config"], "input_sha256": read_json(root / "run_manifest.json")["input_sha256"],
@@ -54,7 +54,7 @@ def summarize(run_dir, output):
               "limitations": ["Partial-cache checkpoint; do not call this a cold measurement.",
                               "Reused pilot classification costs are historical, excluded from incremental checkpoint spend.",
                               "Human golden evaluation and recorded recovery remain separate required evidence.",
-                              "Sample ranking is not the final 100k recommendation."]}
+                              ("Final scope is a selected 100k subset, not all 660609 nonempty source reviews." if len(predictions) >= 100000 else "Sample ranking is not the final 100k recommendation.")]}
     write_json(output / "summary.json", result)
     return result
 

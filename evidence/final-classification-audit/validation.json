@@ -1,0 +1,10 @@
+{
+  "statuses": {
+    "completed": 100000,
+    "quarantined": 13
+  },
+  "valid_original_source_hashes": 100013,
+  "valid_classifications": 100000,
+  "new_api_calls": 0,
+  "downstream_quality_and_memo": "still_in_progress"
+}
