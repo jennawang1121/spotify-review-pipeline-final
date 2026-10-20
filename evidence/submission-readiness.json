@@ -1,0 +1,25 @@
+{
+  "deadline": "2026-10-20T23:59:00-07:00",
+  "deadline_source": "User update in chat",
+  "repository": "https://github.com/jennawang1121/spotify-review-pipeline-final",
+  "repository_public_signed_out_http": 200,
+  "clean_copy_tests_passed": 44,
+  "checkpoint_10000_checker": "pass",
+  "final_status_snapshot": {
+    "statuses": {
+      "completed": 27873,
+      "pending": 72127,
+      "quarantined": 13
+    },
+    "cache_reused_records": 18463,
+    "completed_provenance": {
+      "provider_response": 27873
+    },
+    "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+    "official_contract_validated": false
+  },
+  "final_run_active": true,
+  "offline_postprocessing_started": true,
+  "dashboard_public_permission": "pending",
+  "assignment_complete": false
+}
