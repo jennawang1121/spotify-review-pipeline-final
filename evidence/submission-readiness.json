@@ -1,5 +1,5 @@
 {
-  "state": "final_analysis_and_public_dashboard_ready",
+  "state": "public_submission_prepared_with_disclosed_limitations",
   "classification_complete": 100000,
   "quarantined": 13,
   "verification_valid": 4990,
@@ -14,7 +14,9 @@
   "student_product_direction_endorsed": true,
   "public_dashboard_browser_verified": true,
   "remaining": [
-    "Publish final GitHub evidence archives and source",
-    "Student submits repository URL to course portal"
-  ]
+    "Student submits public repository URL to course portal",
+    "Instructor review of disclosed unknown usage and assisted-reference provenance"
+  ],
+  "repository_url": "https://github.com/jennawang1121/spotify-review-pipeline-final",
+  "release_url": "https://github.com/jennawang1121/spotify-review-pipeline-final/releases/tag/final-100k"
 }
