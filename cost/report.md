@@ -1,4 +1,6 @@
-# Measured 100-review pilot — 2026-10-06
+# Historical measured 100-review pilot — 2026-10-06
+
+This is the dated pilot report and preserves its then-current projections and gate status. For completed final-scope results and costs, see the [final README](../README.md), [cost ledger](../evidence/final-100k/project-cost.json), and [final checker](../evidence/final-100k/official-check.json). Do not interpret historical “pending” statements below as the current submission status.
 
 Scope update: the user confirmed the revised 100,000-nonempty minimum. Full-source scenarios below are retained as comparisons; the selected 100k plan and required deployed product are documented in [revised scope](../docs/revised-scope.md), with [editable 100k scenarios](scenarios-100k.json). No final-scale run has started.
 

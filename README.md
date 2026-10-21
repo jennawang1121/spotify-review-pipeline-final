@@ -8,6 +8,14 @@
 - Final recommendation (student endorsed the proposed direction on October 20): [editorially checked memo](evidence/final-100k/memo.editorial.md), [raw model draft](evidence/final-100k/memo.raw.md), [audit](evidence/final-100k/memo-audit.json).
 - Total known project API cost: **USD 4.702716959**; including outstanding reservations: **USD 4.722227834**, below the approved USD 7 cap. This is a usage-based estimate, not an invoice. Hosting/local compute are excluded. [Detailed ledger summary](evidence/final-100k/project-cost.json).
 
+For the rubric item-by-item review, see the [full-mark risk audit](docs/full-mark-audit-2026-10-20.md).
+
+## Grader snapshot
+
+The full source has 660,622 rows; the final selected scope has 100,000 classified nonempty reviews plus 13 empty quarantines. Exact-text reuse accounts for 21,901 selected original IDs. Golden 50 agreement against the student-reviewed, AI-assisted reference is topic 62%, intent 78%, and exact severity 66%; these are diagnostic comparisons. The independent 5,000-ID sample produced 4,990 valid comparisons and 10 visible failures; among valid comparisons, topic agreement was 4,479/4,990 and severity agreement 4,440/4,990. The final run's recorded non-warm stage invocations sum to 45,659.283 seconds (12.68 hours); this is a sum of measured invocations, not a single uninterrupted wall-clock clock or an API-duration sum. The project known API cost is $4.702716959, with $0.019510875 unresolved reservation. See [final measurements](evidence/final-100k/summary.json), [cost](evidence/final-100k/project-cost.json), and [a real review's full evidence path](docs/one-review-trace.md).
+
+The original course [dataset archive and download instructions](data/README.md) identify the source. The unchanged 97,400,616-byte CSV has SHA-256 `1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6` ([full ingestion report](evidence/ingestion.json)). The reproducible final selected-scope hash is `b87ca3b10e8ff88d3a4a203f69ae9a9dc8c36fa4ed67ea8e1e3dda4363808842`.
+
 ## Question and scope
 
 Where should Spotify focus the next quarter of product work at the end of this historical review window? The pipeline preserves original review evidence, produces constrained labels, calculates a reproducible issue ranking and asks a separate model role to draft a grounded recommendation.

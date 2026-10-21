@@ -1,0 +1,18 @@
+# Full-mark risk audit — October 20, 2026
+
+This is a criterion-by-criterion submission review against the revised assignment, not a predicted grade. The instructor assigns the 4/3/3 qualitative rubric and may test model label quality on a private reference set.
+
+| Point | Evidence checked | Remaining grading risk |
+|---|---|---|
+| D1 Code, setup, accessible artifacts | Public repository, README, blank `.env.example`, downloadable release, clean offline replay and 47 tests. | Course portal submission remains the student's step. |
+| D2 Architecture, schema, provenance | Four distinct roles and prompts, shared taxonomy, original IDs and hashes, saved requests/responses, database and diagram. | Model semantic correctness is not proved by schema validation. |
+| D3 Numbers and source evidence | Deterministic ranking replay and official checker match; claims link to source examples; one-ID trace in `docs/one-review-trace.md`. | Broad `other` and single-topic groups limit interpretation. |
+| D4 Recommendation, alternatives, limits | Final memo gives priority, numerical comparisons, source IDs, and caveats. Student endorsed the direction in chat. | Student did not attest to line-by-line prose review; qualitative assessment belongs to instructor. |
+| T1 Golden 50 and error analysis | 50 completed, student-reviewed references; all field comparisons, diagnostics and concrete disagreements. | AI corrected severity/entity formatting and extracted quotes before student review. This is disclosed, so a strict “50 independently hand-labeled” interpretation may award partial credit. |
+| T2 Independent/system tests | Seeded 5,000 checks (4,990 valid, 10 failed), real planted-error/injection tests, inspected failures. | Model-to-model agreement is diagnostic, not certified accuracy. |
+| T3 Pilot cost and recovery | Real fixed 100 cold/warm pilot, editable prices, offline recomputation, stage costs, two later checkpoints, interruption/resume recording and spending controls. | Three failed final requests have unknown provider usage. The six missing token fields cause `review_required` in the unmodified checker; the project reserves $0.019510875 rather than fabricating usage. |
+| W1 Coverage | Full 660,622-row profile, selected 100,000 valid nonempty classifications, 13 empty quarantines, exact IDs/hashes. The checker gives a 1.0 coverage-point candidate. | Other 560,609 nonempty reviews are explicitly outside the revised minimum scope. |
+| W2 Runnable stages and resume | Arbitrary CSV runner, completed 100/500/10,000/final runs, transactional cache, real recovery, final warm zero calls. | No material gap found in saved execution evidence. |
+| W3 Ranking and deployed product | Offline ranking matches checker and D1 database; public browser shows metrics, issue ranking, source drill-down, verifier evidence and recommendation. Owner-private complete database scan passed before changing access. | A later anonymous command-line scan received Cloudflare error 1010; public browser access and interaction succeeded. |
+
+The official checker reports `review_required`, with **only** `invalid_usage: 6` for three failed calls. It does **not** report missing classifications or ranking mismatches. The 10-point score cannot be certified from local checks. The two strongest subjective risks are the assisted origin of Golden 50 and how the grader treats unknown token usage. A private instructor quality sample can also reveal semantic label errors. The student's portal submission is necessary for grading.
