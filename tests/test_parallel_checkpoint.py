@@ -1,5 +1,6 @@
 """Concurrency and recovery checks use invented texts and mocked providers."""
 import csv
+import json
 import tempfile
 import threading
 import time
@@ -90,6 +91,42 @@ class ParallelCheckpointTests(unittest.TestCase):
             result = run_checkpoint(source, config, root / 'run', 'initial', '1', True, None, factory, {})
             self.assertEqual(result['status'], 'completed')
             self.assertEqual(calls.count('typesafe'), 3)
+
+    def test_invalid_verification_remains_visible_and_is_not_retried_on_warm(self):
+        config = configuration()
+        config['verification_fraction'] = 1
+        calls = []
+        def factory(*args):
+            def send(provider, payload):
+                calls.append(provider)
+                response, provider_id = mock_provider(provider, payload)
+                if provider == 'openai' and 'topic' in payload['text']['format']['schema']['properties']:
+                    output = json.loads(response['output'][0]['content'][0]['text'])
+                    output['evidence_quote'] = 'Fabricated text absent from the source'
+                    response['output'][0]['content'][0]['text'] = json.dumps(output)
+                return response, provider_id
+            return Transport(*args, send=send)
+        with tempfile.TemporaryDirectory() as temporary, patch('pipeline.providers.time.sleep'):
+            root = Path(temporary)
+            source = root / 'invented.csv'
+            with source.open('w', newline='') as handle:
+                writer = csv.DictWriter(handle, fieldnames=SOURCE_FIELDS)
+                writer.writeheader()
+                writer.writerow(dict(zip(SOURCE_FIELDS, ['0', 'Invented complaint', '1', '0', '', '2023-01-01'])))
+            run = root / 'run'
+            result = run_checkpoint(source, config, run, 'initial', '1', True, None, factory, {})
+            self.assertEqual(result['status'], 'completed')
+            verification = list(read_jsonl(run / 'verification.jsonl'))
+            self.assertEqual(verification[0]['status'], 'failed')
+            self.assertEqual(verification[0]['independent_prediction'], {})
+            before = len(calls)
+            run_checkpoint(source, config, run, 'warm', '1', True, None, factory, {})
+            self.assertEqual(len(calls), before)
+            from pipeline.checkpoint_report import summarize
+            summary = summarize(run, root / 'report')
+            self.assertEqual(summary['quality']['failed_verifications'], 1)
+            self.assertEqual(summary['quality']['valid_comparisons'], 0)
+            self.assertIsNone(summary['quality']['sentiment_mean_absolute_difference'])
 
     def test_exact_stop_resume_and_shared_ledger(self):
         self.exercise()

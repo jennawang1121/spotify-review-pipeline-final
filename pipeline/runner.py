@@ -13,7 +13,7 @@ from pathlib import Path
 from .common import ROOT, SOURCE_FIELDS, atomic_text, canonical, configuration, file_sha, read_json, write_json, write_jsonl
 from .costing import replay
 from .jev import build_request, parse_labels
-from .providers import Transport, credentials, openai_request, response_json, schema_object
+from .providers import InvalidModelOutput, Transport, credentials, openai_request, response_json, schema_object
 from .ranking import group, rank
 from .store import import_predictions, ingest, pending, records, status, validate_prediction
 
@@ -269,14 +269,31 @@ def _run(input_csv, config, run_dir, phase, budget, execute_paid, stop_after, tr
         verification = []
         for row in selected:
             text, rid = row["source"]["review_text"], row["review_id"]
+            failure_path = root / "verification_failures" / (rid + ".json")
+            if failure_path.exists():
+                failure = read_json(failure_path)
+                if failure["label_config"] != config["label_config"]:
+                    raise ValueError("Verification failure configuration mismatch")
+                verification.append(failure)
+                continue
             def verify_response(response):
                 predicted = response_json(response)
                 validate_prediction(predicted, text, config["taxonomy"])
                 return predicted
             payload = openai_request(config, config["prompts"]["verification"],
                                      {"review_text": text, "taxonomy": config["taxonomy"]}, prediction_schema(config))
-            predicted = transport.call("openai", "verify", "verification", payload, [rid], verify_response)
-            verification.append({"review_id": rid, "independent_prediction": predicted,
+            try:
+                predicted = transport.call("openai", "verify", "verification", payload, [rid], verify_response)
+            except InvalidModelOutput as error:
+                failure = {"review_id": rid, "status": "failed", "label_config": config["label_config"],
+                           "independent_prediction": {}, "first_prediction": row["prediction"],
+                           "verifier_request_id": error.request_id, "disagreements": [],
+                           "sentiment_absolute_difference": None,
+                           "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification."}
+                write_json(failure_path, failure)
+                verification.append(failure)
+                continue
+            verification.append({"review_id": rid, "status": "completed", "independent_prediction": predicted,
                                  "first_prediction": row["prediction"], "verifier_request_id": transport.last_request_id,
                                  "disagreements": [field for field in ("topic", "intent", "severity", "needs_review")
                                                    if predicted[field] != row["prediction"][field]],

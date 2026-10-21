@@ -3,7 +3,7 @@
 **Finalization in progress — October 20, 2026.** All **100,000 selected nonempty reviews** have saved valid classifications; **13 empty reviews** are quarantined. Every selected ID and source hash has been rechecked against the original CSV. The final 5,000-row independent verification is running. Final memo, full grading export/checker, zero-call warm replay and final dashboard publication remain pending. See the [current evidence audit](docs/criteria-audit-2026-10-20.md).
 
 - Public submission repository: https://github.com/jennawang1121/spotify-review-pipeline-final
-- Dashboard: https://spotify-review-evidence.jenna851121.chatgpt.site — currently the **private 500-review development version**. Public final publication is authorized but pending; the latest archive upload failed with a hosting-service HTTP 522.
+- Dashboard: https://spotify-review-evidence.jenna851121.chatgpt.site — currently a **private read-only 100k version** with an explicit incomplete-verification snapshot. All 100,013 deployed IDs, hashes and statuses and all rankings match local results. Final recommendation, final verification metadata and public access are pending.
 - Deadline: October 20, 2026, 11:59 pm Pacific, per the student's updated instruction.
 
 ## Question and scope
@@ -39,7 +39,7 @@ The baseline counts each original complaint/cancellation ID once. Priority is th
 | T2 Independent/system checks | [Real injection/control checks](evals/system-checks/README.md), [10k verification](evidence/checkpoint-10000/); final 5,000-row verification running |
 | T3 Cost/recovery | [Measured cold/warm pilot](cost/report.md), [editable rates](cost/rates.csv), [10k forecast](cost/projection-100k-10k.json), [actual resume recording](evidence/recovery-10k/stop-resume.html) |
 | W1 Coverage | [Ingestion](evidence/ingestion.json), [100k validation](evidence/final-classification-audit/validation.json), [selected scope](evidence/scope-100k.json) |
-| W2 Runnable stages/resume | [Runner](pipeline/runner.py), [45 offline tests](tests/), [odd-tail recovery](evidence/final-cache-conflict-recovery.json) |
+| W2 Runnable stages/resume | [Runner](pipeline/runner.py), [47 offline tests](tests/), [odd-tail recovery](evidence/final-cache-conflict-recovery.json) |
 | W3 Ranking/deployed database | [Dashboard/backend code](dashboard/README.md), [prior live integration checks](evidence/dashboard-live-checks.json); final deployment pending |
 
 The 10k development checkpoint passed the unmodified instructor checker: [result](evidence/checkpoint-10000/official-check-complete-lineage.json), [complete-lineage export](evidence/grading-checkpoint-10000-complete-lineage/). This does not certify the pending final export. Historical failed checks remain preserved and are not the current passing result.
@@ -80,6 +80,8 @@ python3 -m pipeline --config config-final-100k.json rank --db runs/final-100k/so
 ```
 
 These commands make no model calls. Final portable grading artifacts and their checker command will be added after downstream execution completes.
+
+See [inspected final-sample failures](evals/final-inspected-failures.md) and [production database integrity checks](evidence/dashboard-classification-private-checks.json).
 
 ## Evaluation and limitations
 

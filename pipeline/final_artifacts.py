@@ -40,6 +40,8 @@ def main():
                        'evidence/final-100k/lineage-calls.jsonl',before,after,'grading')
     subprocess.run([sys.executable,'course/check_submission.py','reference','--full','data/course/spotify_reviews_18months.csv','--analysis','data/scope-100k/analysis.csv','--out','runs/reference-final-100k.json'],check=True)
     subprocess.run([sys.executable,'course/check_submission.py','check','--reference','runs/reference-final-100k.json','--submission','grading','--out','evidence/final-100k/official-check.json'],check=True)
+    from .final_feedback import build
+    build()
     result = read_json('evidence/final-100k/official-check.json')
     write_json('evidence/final-artifacts-progress.json',{'state':'offline_artifacts_complete','checker_status':result['status'],'issues':result['issue_counts'],'remaining':['Audit final memo argument','Update deployed database/dashboard','Publish final repository artifacts','Verify public access and submit URL']})
     print('Final offline artifacts ready. Checker:',result['status'],flush=True)

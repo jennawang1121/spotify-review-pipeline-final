@@ -110,6 +110,26 @@ class LiveAndContractTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Uncontrolled numerical"):
                 validate_memo_result(changed, {"count": {}, "unused": {}}, {rid}, ["issue-test"])
 
+    def test_socket_timeout_is_bounded_and_keeps_unknown_reservation(self):
+        import socket
+        from pipeline.providers import openai_request, schema_object
+        attempts = []
+        def timeout(provider, request):
+            attempts.append(1)
+            raise socket.timeout('invented network timeout')
+        with tempfile.TemporaryDirectory() as temporary, patch('pipeline.providers.time.sleep'):
+            config = configuration()
+            transport = Transport(temporary, config, '1', 'initial', 'synthetic-timeout', {}, send=timeout)
+            try:
+                with self.assertRaisesRegex(ValueError, 'bounded attempts'):
+                    transport.call('openai', 'verify', 'verification', openai_request(config, 'Test', {}, schema_object({})), [], response_json)
+                self.assertEqual(len(attempts), 1 + config['transient_error_retries'])
+                events = [read_json(p) for p in (Path(temporary)/'attempts').glob('*.json')]
+                self.assertTrue(all(e['outcome']=='failed' and e['calculated_usd'] is None for e in events))
+                self.assertEqual(transport.ledger.snapshot()['unresolved_attempts'], len(attempts))
+            finally:
+                transport.close()
+
     def test_insufficient_quota_stops_without_pointless_retries(self):
         def denied(provider, request):
             body = io.BytesIO(b'{"error":{"code":"credit_balance_exhausted","type":"insufficient_quota","message":"do not save this"}}')

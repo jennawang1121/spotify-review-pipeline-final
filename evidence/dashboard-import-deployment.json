@@ -1,0 +1,9 @@
+{
+  "deployment_id": "appgdep_6ad7b0586a108191ab89adfda04da339",
+  "version_id": "appgprj_6ac86ab4db388191978f0a098f4b8a4b~appgver_2c9b9222af9c81918dedb3d0b8daee3c",
+  "commit_sha": "bf05fa8be2aeabfea66b1d06bc665d4c277e7a43",
+  "status": "succeeded",
+  "audience": "owner-private",
+  "stage": "temporary import endpoint; remove before public access",
+  "url": "https://spotify-review-evidence.jenna851121.chatgpt.site"
+}

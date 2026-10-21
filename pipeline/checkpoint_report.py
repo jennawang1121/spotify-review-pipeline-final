@@ -20,6 +20,8 @@ def summarize(run_dir, output):
         raise ValueError("Pending records remain; this is not a completed checkpoint.")
     predictions = [r["prediction"] for r in rows if r["status"] == "completed"]
     verified = list(read_jsonl(root / "verification.jsonl"))
+    valid_verified = [v for v in verified if v.get("status", "completed") == "completed"]
+    failed_verified = [v for v in verified if v.get("status") == "failed"]
     calls = list(read_jsonl(root / "cost/pilot_calls.jsonl"))
     from .common import ROOT
     aggregate_measurement = {"evidence_kind": "real_checkpoint" if all(m["evidence_kind"] == "real_pilot" for m in measurements) else "mixed_or_synthetic",
@@ -41,11 +43,12 @@ def summarize(run_dir, output):
               "outcomes": dict(Counter(c["outcome"] for c in calls)),
               "seed_provenance": read_json(root / "seed_provenance.json") if (root / "seed_provenance.json").exists() else None,
               "quality": {"meaning": "Independent model-to-model agreement, NOT human accuracy.",
-                          "sample_size": len(verified), "sample_seed": config["verification_seed"],
-                          "agreement_counts": {field: sum(v["first_prediction"][field] == v["independent_prediction"][field] for v in verified)
+                          "sample_size": len(verified), "valid_comparisons": len(valid_verified), "failed_verifications": len(failed_verified),
+                          "failed_verification_ids": [v["review_id"] for v in failed_verified], "sample_seed": config["verification_seed"],
+                          "agreement_counts": {field: sum(v["first_prediction"][field] == v["independent_prediction"][field] for v in valid_verified)
                                                for field in ("topic", "intent", "severity", "needs_review")},
-                          "sentiment_mean_absolute_difference": sum(v["sentiment_absolute_difference"] for v in verified) / len(verified) if verified else None,
-                          "sentiment_within_tolerance_count": sum(v["sentiment_absolute_difference"] <= config["sentiment_evaluation_tolerance"] for v in verified),
+                          "sentiment_mean_absolute_difference": sum(v["sentiment_absolute_difference"] for v in valid_verified) / len(valid_verified) if valid_verified else None,
+                          "sentiment_within_tolerance_count": sum(v["sentiment_absolute_difference"] <= config["sentiment_evaluation_tolerance"] for v in valid_verified),
                           "sentiment_tolerance": config["sentiment_evaluation_tolerance"],
                           "needs_review_count": sum(p["needs_review"] for p in predictions),
                           "intent_counts": dict(Counter(p["intent"] for p in predictions)),

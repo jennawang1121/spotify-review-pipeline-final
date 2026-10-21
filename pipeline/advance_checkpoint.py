@@ -27,9 +27,9 @@ def main():
         print('Starting bounded resume segment '+str(segment), flush=True)
         try:
             result = run_checkpoint(source, config, run, phase, cap, True)
-        except ValueError as error:
+        except Exception as error:
             snapshot = status(run/'source.sqlite',config['label_config'])
-            if 'Run time cap reached' not in str(error):
+            if not isinstance(error, ValueError) or 'Run time cap reached' not in str(error):
                 write_json(progress, {'state':'failed_visible','error':str(error),'segment':segment,'snapshot':snapshot,'budget_cap_usd':cap})
                 raise
             write_json(progress, {'state':'resuming_after_runtime_cap','segment':segment,'snapshot':snapshot,'budget_cap_usd':cap})

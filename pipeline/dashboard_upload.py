@@ -1,18 +1,19 @@
 """Upload saved classifications to the owner-private temporary import endpoint.
 Credential is read through hidden terminal input and never saved.
 """
-import getpass,json,time,urllib.request
+import argparse,getpass,json,time,urllib.request
 from pathlib import Path
 from .common import read_json,write_json
 from .store import records
 
 def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--restart',action='store_true');args=parser.parse_args()
     token=getpass.getpass('Site service credential (hidden): ')
     root=Path('runs/final-100k')
     config=read_json(root/'label_configuration.json')
     state=Path('evidence/dashboard-import-progress.json')
     previous=read_json(state) if state.exists() else {}
-    offset=previous.get('uploaded',0)
+    offset=0 if args.restart else previous.get('uploaded',0)
     revision='final-100013-a88f521a4089'
     rows=records(root/'source.sqlite',config['label_config'])
     batch=[];position=0

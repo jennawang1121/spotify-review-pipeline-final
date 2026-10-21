@@ -3,7 +3,7 @@
   "deadline_source": "User update in chat",
   "repository": "https://github.com/jennawang1121/spotify-review-pipeline-final",
   "repository_public_signed_out_http": 200,
-  "clean_copy_tests_passed": 44,
+  "clean_copy_tests_passed": 45,
   "checkpoint_10000_checker": "pass",
   "final_status_snapshot": {
     "statuses": {
@@ -30,5 +30,7 @@
   "dashboard_publication_authorized": true,
   "dashboard_publication_condition": "After final data update and validation",
   "project_api_budget_usd": 7,
-  "dashboard_deployment_blocker": "Archive upload service HTTP 522; final import version not deployed"
+  "dashboard_deployment_blocker": null,
+  "dashboard_state": "100013 rows loaded and matched against local IDs/hashes/statuses; all rankings match; read-only private version deployed; final recommendation and public access pending",
+  "current_tests_passed": 47
 }

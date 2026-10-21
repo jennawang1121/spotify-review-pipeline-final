@@ -1,0 +1,30 @@
+{
+  "stage": "classification_database_only",
+  "status": "pass",
+  "access": "owner-private",
+  "all_id_hash_status_rows_checked": 100013,
+  "actual_source_prediction_samples": 6,
+  "ranking_matches": true,
+  "coverage": {
+    "total": 100013,
+    "completed": 100000,
+    "pending": 0,
+    "quarantined": 13,
+    "needs_review": 55408
+  },
+  "quality": {
+    "sample_size": 5000,
+    "valid_comparisons": 3473,
+    "failed_verifications": 7,
+    "pending_verifications": 1520,
+    "agreement_counts": {
+      "topic": 3132,
+      "intent": 3200,
+      "severity": 3110,
+      "needs_review": 2167
+    },
+    "needs_review_count": 55408,
+    "sentiment_mean_absolute_difference": 0.13794701986754926
+  },
+  "url": "https://spotify-review-evidence.jenna851121.chatgpt.site"
+}

@@ -1,5 +1,7 @@
 """Explicit paid transport with durable per-attempt evidence and bounded retries."""
 import json
+import socket
+import http.client
 import os
 import random
 import time
@@ -17,6 +19,13 @@ from .costing import call_cost, load_rates
 
 
 ENDPOINTS = {"typesafe": "https://api.typesafe.ai/v1/systemone", "openai": "https://api.openai.com/v1/responses"}
+
+
+class InvalidModelOutput(ValueError):
+    """Bounded attempts ended with a saved but invalid model response."""
+    def __init__(self, request_id):
+        super().__init__("Model output failed validation after bounded attempts: " + request_id)
+        self.request_id = request_id
 
 
 def credentials():
@@ -195,7 +204,7 @@ class Transport:
                         delay = min(30.0, max(0.0, float(exc.headers.get("retry-after", 0))))
                     except (ValueError, AttributeError):
                         delay = 0
-            except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+            except (urllib.error.URLError, TimeoutError, socket.timeout, ConnectionError, http.client.HTTPException) as exc:
                 event["outcome"] = "failed"
                 event["error"] = type(exc).__name__ + ": charges may be unknown"
                 if transient_retries < self.config["transient_error_retries"]:
@@ -220,6 +229,8 @@ class Transport:
                 self.last_request_id = attempt_id
                 return value
             if not retry:
+                if event.get("error", "").startswith("invalid_response:"):
+                    raise InvalidModelOutput(attempt_id)
                 raise ValueError("Model task failed after bounded attempts; inspect saved attempt IDs (no keys logged).")
             time.sleep(max(delay, min(10, 2 ** transient_retries)) + random.random() * 0.2)
 

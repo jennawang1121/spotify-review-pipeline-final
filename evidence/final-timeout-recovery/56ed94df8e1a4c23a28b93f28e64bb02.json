@@ -1,0 +1,30 @@
+{
+  "request_id": "56ed94df8e1a4c23a28b93f28e64bb02",
+  "call_id": "56ed94df8e1a4c23a28b93f28e64bb02",
+  "run_id": "resume-ccc74908b9da47668e02303b866d4528",
+  "role": "verify",
+  "stage": "verification",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "tier": "standard",
+  "review_ids": [
+    "a225adfa-f635-49db-ab27-fb8e1791a5d0"
+  ],
+  "phase": "resume",
+  "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+  "schema_version": "a5-audit-v1",
+  "effort": "none",
+  "worker_count": 2,
+  "batch_size": 1,
+  "outcome": "in_flight",
+  "input_tokens": null,
+  "output_tokens": null,
+  "billing_tokens": null,
+  "raw_usage": null,
+  "duration_seconds": 60.07094262499959,
+  "evidence_kind": "real_pilot",
+  "reserved_usd": "0.002057625",
+  "request_artifact": "requests/56ed94df8e1a4c23a28b93f28e64bb02.json",
+  "started_at": "2026-10-20T19:44:09.404005+00:00",
+  "calculated_usd": null
+}

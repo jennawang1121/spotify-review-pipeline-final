@@ -1,26 +1,39 @@
 # Spotify Review Evidence dashboard
 
-Cloudflare Worker backend + D1 SQLite database + browser UI. No runtime model provider credentials or model calls. Data is real saved pipeline output; the first read idempotently imports the versioned seed into migrated database tables. Subsequent API reads query that database. The current seed is the 500-review development checkpoint, not a completed 100k run.
+Cloudflare Worker backend + D1 database + browser UI. Browsing makes no model calls. Provider credentials are never deployed. The final-scope database contains 100,000 saved classifications plus 13 empty-text quarantines. Final verification/memo metadata is published separately; staging snapshots explicitly show pending work.
 
-`src/backend.js` owns read-only API routes; `src/index.html`, `client.js` and `style.css` implement the UI. Build embeds them into one Worker, avoiding a frontend framework and runtime dependency bundle. Drizzle dependencies are schema/build tooling only; the deployed Worker has no npm runtime imports. `db/schema.ts` and generated `drizzle/` own schema changes. Never put review datasets in migration SQL.
+`src/backend.js` serves SQL queries; `src/index.html`, `client.js` and `style.css` implement the UI. `db/schema.ts` and immutable generated `drizzle/` migrations own the schema. Data is loaded separately, never embedded into schema migrations. `data/seed.json` contains compact analysis metadata and verifier outcomes, not the full 100k review table. Verification is stored in bounded 500-row analysis values and reassembled by the backend.
 
-API routes: `/api/summary`, `/api/issues`, `/api/reviews`, `/api/reviews/:original_id`, `/api/recommendation`, `/api/quality`. The issue endpoint recalculates count/severity sum/half-up means from database records. Recommendation, claims, shared taxonomy, verification and source provenance are also stored in the database. No public data-write endpoint is exposed.
+## Local database and preview
 
-From this directory, with Node 22+:
+With the saved final run restored under `runs/final-100k/`, run from the repository root:
 
 ```sh
+python3 -m pipeline.dashboard_local
+cd dashboard
 npm ci
 npm run build
 npm run validate
 npm run dev
 ```
 
-Local preview uses a persisted real SQLite file, the same Drizzle schema and the same Worker API handler. Production uses the logical `DB` D1 binding declared in `.openai/hosting.json`. The Sites publishing workflow applies schema migrations before uploading the Worker. Build output is `dist/server/index.js`; edit `src/` and regenerate, rather than editing generated output. Publish through Sites tools with the exact built-source commit and archive; preserve the existing project ID.
+Node 22.13+ is needed for the local SQLite adapter. The production Worker uses D1 and has no npm runtime dependencies. The preview uses persistent `.sites-runtime/preview.sqlite`, the same schema and the same API handler. No model keys are required. Build output is `dist/server/index.js`; edit `src/` and regenerate.
 
-To export a later fully completed pipeline checkpoint, from the parent pipeline folder:
+## Production database loading
+
+The existing Site identity and `DB` binding are in `.openai/hosting.json`. Sites applies schema migrations before deployment. The real initial 100k import used an owner-private staging version; rows were uploaded idempotently in bounded batches, and then the importer was removed from the deployed build. The normal build rejects POST requests, including `/api/import`.
+
+To rebuild this authorized owner-private setup only, an explicit `SITES_PRIVATE_IMPORT=1` build enables the saved temporary importer from `scripts/private-import-handler.js`. Publish that build privately, upload saved records with `python3 -m pipeline.dashboard_upload --restart` from the root, then build with that variable unset and publish the normal read-only version **before** changing access to public. Never use the temporary importer on a public Site. Service credentials are supplied through hidden terminal input and are not saved.
+
+## Metadata and checks
+
+After final pipeline completion and memo review:
 
 ```sh
-python3 -m pipeline.dashboard_export --run-dir runs/checkpoint-500 --summary evidence/checkpoint-500/summary.json --memo evidence/checkpoint-500/memo-editorial.md --out dashboard/data/seed.json
+python3 -m pipeline.dashboard_export --run-dir runs/final-100k --summary evidence/final-100k/summary.json --memo evidence/final-100k/memo.editorial.md --out dashboard/data/seed.json --external
+python3 -m pipeline.dashboard_check --private
 ```
 
-The exporter rejects pending rows and synthetic classification provenance. Inspect the memo argument, refresh the seed, build and republish. Data revisions have separate database keys. The source contains public CC0 course review extracts, exact original hashes and saved predictions; it never includes `.env`, provider keys or human golden answers.
+The metadata exporter rejects pending classification rows and synthetic provenance. Publish the exact built/pushed source through Sites. Once public, run `python3 -m pipeline.dashboard_check` without credentials. This compares **every** original ID, source hash and status, all ranked counts/scores/means, representative complete source/prediction payloads, final verification coverage and the recommendation's issue reference.
+
+API routes: `/api/summary`, `/api/issues`, `/api/reviews`, `/api/reviews/:id`, `/api/recommendation`, `/api/quality`, `/api/integrity?page=N`. Integrity pages hash ordered groups of 1,000 ID/hash/status triples. The issue endpoint recalculates counts and severity sums from saved records, using deterministic HALF_UP means. SQL filters and pagination never invoke a model. Golden reference answers and student evaluation reports stay outside the website.

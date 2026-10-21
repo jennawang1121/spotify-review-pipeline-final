@@ -1,22 +1,32 @@
 # Rubric-to-evidence tracker
 
-Implementation status, not awarded points. Formal cold/warm complete: 107 successful cold calls across all four roles, zero warm calls. Development failures remain separately logged; six have unresolved usage. See [measured report](cost/report.md). These ten criteria require actual execution and review before claiming completion.
+Current finalization status, October 20, 2026. This is an evidence map, not an awarded or predicted grade. The complete source is ingested; the selected minimum scope has 100,000 valid classifications and 13 empty quarantines. Independent final verification and memo generation are still running.
 
-| Criterion | Current evidence | Remaining evidence |
+| Criterion | Evidence | Remaining work / limitation |
 |---|---|---|
-| D1 Accessible code/setup/artifacts | Local Python CLI and documented commands | Public repo/release; clean setup and signed-out link check |
-| D2 Architecture/schema/provenance | Four implemented roles, official row hash, export adapter; mock checker test passes | Pilot handoffs recorded; final full-corpus trace and checker still needed |
-| D3 Numerical evidence | Deterministic membership/ranking/claims tested | Real full-run values and memo claims reproduced offline |
-| D4 Recommendation/alternatives/limits | Structured memo generation and citation validation implemented | Real recommendation, alternatives, limitations and human argument review |
-| T1 Human gold/evaluation | All50 reference rows complete; frozen-model predictions and actual diagnostic metrics saved in evals/golden_50_assisted_evaluation.json | Disclose AI-assisted severity/entity corrections and quote extraction; fully independent human annotation requirement is not established for assisted fields. Human review of disagreements remains. |
-| T2 Independent/system checks | Blind seeded verifier implemented; synthetic validation tests | Five pilot plus 25 checkpoint blind predictions saved; development error analysis in evidence/checkpoint-500; eight real control/injection calls and planted-error detection saved; 50-case diagnostic evaluation now saved with explicit mixed human/AI reference provenance |
-| T3 Measured cost/recovery | Offline arithmetic, real transport logging, budget/retry/resume implemented; mock tests | Actual cold/warm and real terminal stop/resume recording saved (`evidence/recovery-10k`); complete scale projections, reconcile unknown usage; screen video if separately required |
-| W1 Coverage | All 660,622 source rows ingested and profiled; 13 empty; hashes match | Revised target: valid classifications for at least 100,000 nonempty rows; retain 13 empty quarantines and disclose selected scope, failures and old coverage-formula discrepancy |
-| W2 Runnable staged pipeline | Real fixed-100 run; arbitrary-CSV checkpoint runner tested across multiple pages, seeded reuse and empty quarantine | Pilot validated against both providers; 500 completed with zero-call warm replay; 10k/100k executions remain |
-| W3 Reproducible output + deployed product | Saved-membership replay and mock official ranking check | 500-scope Worker/D1/dashboard deployed; live counts and all eight rankings verified. Remaining: public grader access and final 100k data/recommendation update |
+| D1 Accessible setup/artifacts | Public GitHub repository, runnable standard-library Python, offline calculator, schema and UI source | Final artifacts/release and final link check |
+| D2 Architecture/schema/provenance | Four separate roles/instructions; exact original IDs and hashes; validated final classifications | Final role handoffs and export/checker report |
+| D3 Correct numerical evidence | All 100k baseline scores computed offline; production SQL agrees on every ranking; every deployed ID/hash/status matched | Final memo numeric/citation audit |
+| D4 Recommendation/alternatives/limits | Historical development recommendations; final analysis is available | Final model recommendation and student argument review |
+| T1 Human gold/per-field/error analysis | 50 student-supplied references, frozen-model predictions and per-field diagnostics; assistance is disclosed | Fully independent human provenance is not established for assisted severity/entity/quote fields. Do not describe diagnostic agreement as certified accuracy |
+| T2 Independent/system checks | Blind seeded verification, real injection/control tests, planted-error detection, inspected final examples | Complete final 5,000 selected checks; report failed checks and valid comparisons separately |
+| T3 Measured cost/recovery | Actual fixed cold/warm 100, editable-rate calculator, real resume recording, bounded retries/budget, saved timeout/conflict evidence | Final cost/runtime report; unknown provider usage remains unknown with reservations held |
+| W1 Coverage | Full 660,622 ingestion; all selected 100,000 nonempty reviews valid; 13 empty quarantines | Final unmodified checker. The other 560,609 nonempty reviews are outside the selected scope |
+| W2 Runnable staged program | Arbitrary-CSV runner, completed 100/500/10k, final classifications, 47 offline tests | Final downstream completion and measured zero-call warm replay |
+| W3 Deployed product | Private read-only 100k Worker/D1 dashboard; all IDs/hashes/statuses and all rankings match local results | Replace pending verification/memo metadata, validate final view and enable authorized public access |
 
-## Feedback at each checkpoint
+## Current evidence links
 
-Record quality metrics and representative mistakes; distinguish label errors from quote/entity omissions. Inspect verifier disagreements rather than averaging them away. Report all completed/pending/quarantined counts, every attempted call, unknown charges, cost per completed record and input row, and warm replay's incremental calls. Link the evidence for each criterion, then choose the smallest change that fixes a demonstrated problem.
+- [Complete classification/source audit](evidence/final-classification-audit/validation.json)
+- [Final deterministic ranking](evidence/final-classification-audit/ranking.csv)
+- [Deployed database integrity](evidence/dashboard-classification-private-checks.json)
+- [Inspected final model/engineering failures](evals/final-inspected-failures.md)
+- [Golden 50 diagnostics](evals/golden_50_assisted_evaluation.json)
+- [Assistance provenance](evals/golden_50_assisted.provenance.json)
+- [Real system checks](evals/system-checks/README.md)
+- [Measured 100-review cold/warm](cost/report.md)
+- [10k passing checker](evidence/checkpoint-10000/official-check-complete-lineage.json)
+- [Actual terminal interruption/resume recording](evidence/recovery-10k/stop-resume.html)
+- [Detailed current audit](docs/criteria-audit-2026-10-20.md)
 
-Do not tune prompts on golden answer labels. Freeze development decisions separately and evaluate the held-out human labels honestly. A synthetic checker pass validates output shape only; no real classification, grading result or provider bill is certified by it.
+Do not hide failures, replace unknown usage with zero, relabel assistant-edited reference fields as independently human, or describe the final assignment as complete while publication and downstream evidence remain unfinished.

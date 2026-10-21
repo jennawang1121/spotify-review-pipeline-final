@@ -1,6 +1,15 @@
 const json=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:{"content-type":"application/json; charset=utf-8","cache-control":"no-store","x-content-type-options":"nosniff"}});
 const revision=()=>SEED.revision;
-async function stored(db,key){const row=await db.prepare("SELECT value FROM analysis WHERE key=?").bind(revision()+":"+key).first();return row?JSON.parse(row.value):null;}
+async function stored(db,key){
+  const row=await db.prepare("SELECT value FROM analysis WHERE key=?").bind(revision()+":"+key).first();
+  const value=row?JSON.parse(row.value):null;
+  if(key==="verification" && value?.chunks){
+    const rows=[];
+    for(let i=0;i<value.chunks;i++)rows.push(...await stored(db,"verification:"+i));
+    return rows;
+  }
+  return value;
+}
 let initialization;
 async function initialize(db){
   if(!initialization)initialization=seedDatabase(db).catch(error=>{initialization=null;throw error;});
@@ -8,7 +17,12 @@ async function initialize(db){
 }
 async function seedDatabase(db){
   if(!db)throw new Error("Database is unavailable");
-  if(await stored(db,"ready"))return;
+  const ready=await stored(db,"ready");
+  if(ready && ready.metadata_version===(SEED.metadata_version??"staging"))return;
+  if(SEED.external_count){
+    const n=await db.prepare("SELECT COUNT(*) AS n FROM reviews WHERE dataset_id=?").bind(revision()).first();
+    if(n.n!==SEED.external_count)throw new Error("Final dataset import is incomplete");
+  }
   // Schema-only Drizzle migrations run before deployment. This separately seeds
   // saved real results; interrupted batches resume idempotently on the next read.
   for(let offset=0;offset<SEED.reviews.length;offset+=50){
@@ -18,17 +32,28 @@ async function seedDatabase(db){
         .bind(revision(),r.review_id,r.source_sha256,JSON.stringify(r.source),p?JSON.stringify({prediction:p,provenance:r.provenance,cache_source_id:r.cache_source_id,label_config:r.label_config}):null,r.status,p?.topic??null,p?.intent??null,p?.severity??null,p?Number(p.needs_review):null);
     }));
   }
-  for(const key of ["summary","memo","raw_memo","recommendation","names","pack","taxonomy","verification","final_scope"])
+  for(const key of ["summary","memo","raw_memo","recommendation","names","pack","taxonomy","final_scope"])
     await db.prepare("INSERT OR REPLACE INTO analysis(key,value) VALUES(?,?)").bind(revision()+":"+key,JSON.stringify(SEED[key])).run();
+  // Keep each D1 value bounded; the full verifier sample exceeds one row's limit.
+  const chunks=Math.ceil(SEED.verification.length/500);
+  for(let i=0;i<chunks;i++)await db.prepare("INSERT OR REPLACE INTO analysis(key,value) VALUES(?,?)").bind(revision()+":verification:"+i,JSON.stringify(SEED.verification.slice(i*500,(i+1)*500))).run();
+  await db.prepare("INSERT OR REPLACE INTO analysis(key,value) VALUES(?,?)").bind(revision()+":verification",JSON.stringify({chunks})).run();
   const n=await db.prepare("SELECT COUNT(*) AS n FROM reviews WHERE dataset_id=?").bind(revision()).first();
-  if(n.n!==SEED.reviews.length)throw new Error("Database coverage mismatch");
-  await db.prepare("INSERT OR REPLACE INTO analysis(key,value) VALUES(?,?)").bind(revision()+":ready",JSON.stringify({count:n.n,revision:revision()})).run();
+  if(n.n!==(SEED.external_count??SEED.reviews.length))throw new Error("Database coverage mismatch");
+  await db.prepare("INSERT OR REPLACE INTO analysis(key,value) VALUES(?,?)").bind(revision()+":ready",JSON.stringify({count:n.n,revision:revision(),metadata_version:SEED.metadata_version??"staging"})).run();
 }
 function mean(sum,count){const s=BigInt(sum)*1000000n,c=BigInt(count);const n=(s+c/2n)/c;return (n/1000000n).toString()+"."+(n%1000000n).toString().padStart(6,"0");}
 async function api(request,env,url){
   if(request.method!=="GET")return json({error:"Read-only endpoint"},405);
   await initialize(env.DB);
   const db=env.DB;
+  if(url.pathname==="/api/integrity"){
+    const page=Math.max(0,Math.min(1000,parseInt(url.searchParams.get("page")??"0",10)||0));
+    const data=await db.prepare("SELECT review_id,source_hash,status FROM reviews WHERE dataset_id=? ORDER BY review_id LIMIT 1000 OFFSET ?").bind(revision(),page*1000).all();
+    const lines=data.results.map(r=>r.review_id+"|"+r.source_hash+"|"+r.status+"\n").join("");
+    const digest=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(lines));
+    return json({page,rows:data.results.length,sha256:Array.from(new Uint8Array(digest),x=>x.toString(16).padStart(2,"0")).join(""),revision:revision()});
+  }
   if(url.pathname==="/api/summary"){
     const row=await db.prepare("SELECT COUNT(*) AS total,SUM(status='completed') AS completed,SUM(status='pending') AS pending,SUM(status='quarantined') AS quarantined,SUM(needs_review=1) AS needs_review FROM reviews WHERE dataset_id=?").bind(revision()).first();
     return json({coverage:row,experiment:await stored(db,"summary"),scope:await stored(db,"final_scope"),database:{revision:revision(),source:"D1 SQL queries over saved processed records"}});

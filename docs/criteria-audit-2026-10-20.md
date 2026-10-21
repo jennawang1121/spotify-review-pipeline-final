@@ -4,7 +4,7 @@ Status: finalization in progress. This is not a predicted grade. The current dea
 
 | Criterion | Current evidence | Still required |
 |---|---|---|
-| D1 Accessible code/setup | Public GitHub repository; prior clean-copy tests; 45 current offline tests | Final artifact sync and clean-copy rerun |
+| D1 Accessible code/setup | Public GitHub repository; prior clean-copy tests; 46 current offline tests | Final artifact sync and clean-copy rerun |
 | D2 Architecture/schema/provenance | Four distinct model roles; source IDs/hashes; all 100,000 classifications validated | Final downstream handoffs and official export |
 | D3 Correct calculations/citations | All final classifications rechecked against the original CSV; deterministic final ranking generated | Final memo citation audit and full checker |
 | D4 Recommendation | Development memos and final issue ranking | Final model memo, argument review, alternatives and limitations |
@@ -23,4 +23,4 @@ The final odd queue item was dispatched twice before the first result committed.
 
 The student explicitly approved a USD 7 total API cap. Historical experiments reserve USD 1; final processing has a cumulative USD 6 cap. Unknown costs retain reservations rather than being counted as zero. Hosting and local compute are excluded from API totals. Dashboard public access is authorized only after final data update and validation.
 
-Sites archive uploads currently return a service HTTP 522. The final import source is pushed, but it has not been deployed; the existing private 500-row publication remains live. This does not affect local classification or verification.
+The archive upload service recovered after HTTP 522 failures. The owner-private import version is deployed and loading saved records. The public final source must remove the temporary importer and replace staging metadata before publication.
