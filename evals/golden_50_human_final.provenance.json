@@ -1,0 +1,27 @@
+{
+  "status": "complete_validated_student_supplied",
+  "workbook": "evals/golden_50_human_final.xlsx",
+  "workbook_sha256": "d2c4ba089d5890db6a700af3edc325fcd5a2df825640f78abffa2aecf251368a",
+  "source_review_count": 50,
+  "completed_label_fields_per_review": 7,
+  "original_ids_and_text_unchanged": true,
+  "all_quotes_exact_source_substrings": true,
+  "validation_command": "python3 -m pipeline.golden_workbook evals/golden_50_human_final.xlsx --out evals/golden_50_human_final.csv",
+  "prediction_source": "evals/golden_50_predictions.jsonl",
+  "new_model_calls": 0,
+  "earlier_evaluation_existed_before_this_workbook": true,
+  "held_out_after_earlier_evaluation": false,
+  "student_supplied_final_reference": true,
+  "reference_vs_prior_assisted_changed_field_counts": {
+    "topic": 2,
+    "intent": 4,
+    "severity": 12,
+    "sentiment": 3,
+    "needs_review": 40,
+    "entities": 4,
+    "evidence_quote": 9
+  },
+  "historical_assisted_reference": "evals/golden_50_assisted.csv",
+  "historical_assisted_evaluation": "evals/golden_50_assisted_evaluation.json",
+  "note": "The workbook was supplied by the student after a prior evaluation. Frozen saved predictions were reevaluated; no new model call or prompt adjustment was made. Whether prior feedback influenced the new labels is unknown, so this final reference is not described as a fresh blind holdout."
+}
