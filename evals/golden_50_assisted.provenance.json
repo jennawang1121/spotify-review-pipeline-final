@@ -14,5 +14,25 @@
     "statement": "已逐條複核，標注符合我的判讀",
     "scope": "All 50 revised reference rows; prior AI assistance remains disclosed",
     "original_blind_independent_annotation": false
+  },
+  "student_authorship_clarification": {
+    "source_workbook": "evals/golden_50_student_submitted.xlsx",
+    "student_entered_counts_before_assistance": {
+      "topic": 49,
+      "intent": 50,
+      "severity": 50,
+      "sentiment": 50,
+      "needs_review": 50,
+      "entities": 32,
+      "evidence_quote": 0
+    },
+    "remaining_topic": "C24 usability explicitly directed by student in chat",
+    "final_decision_owner": "student",
+    "final_review": "Student stated she reviewed all 50 revised rows and they reflect her own analysis; she reaffirmed that the underlying classifications are hers.",
+    "assistant_role": "Applied student-directed severity corrections; normalized entities to source-matching JSON; extracted verbatim source quotes. No model predictions replaced student answers.",
+    "independence_note": "The assistant-authored quote field and assisted normalization remain disclosed; this is not a claim every character in every label cell was typed by the student.",
+    "source_workbook_sha256": "b3ebf2229230a12111f1ac921c50be571eacd0a01c4fbdd6b855a8a9f7f0cf8d",
+    "student_accepted_final_evidence_quotes": true,
+    "quote_production_method": "Assistant selected exact substrings from the original review text; student reviewed and adopted the final 50 rows."
   }
 }
