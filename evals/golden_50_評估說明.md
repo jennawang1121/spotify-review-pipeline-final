@@ -49,3 +49,7 @@
 | 52 | billing → billing | complaint → cancellation | 5 → 3 |
 | 53 | usability → other | complaint → complaint | 2 → 2 |
 | 54 | usability → other | praise → praise | 1 → 1 |
+
+## 學生最終複核確認
+
+2026-10-20（Pacific），學生明確確認：「已逐條複核，標注符合我的判讀」。因此此版為學生逐條複核的 AI 協助參考標注。此確認不改寫原始產生過程，也不代表原先所有欄位均為盲測獨立人工標注；各欄位協助紀錄仍保留。

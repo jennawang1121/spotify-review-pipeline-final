@@ -1,0 +1,21 @@
+{
+  "classification_complete": 100000,
+  "quarantined": 13,
+  "official_checker_status": "review_required",
+  "official_checker_issues": {
+    "invalid_usage": 6
+  },
+  "unknown_usage_policy": "Never replace missing provider usage with zero; failed attempts remain in the full call log.",
+  "artifacts": [
+    {
+      "file": "spotify-100k-saved-run.zip",
+      "bytes": 53775410,
+      "sha256": "70b12f24110becd274310dd8cc953634d70f9aa77a1774d13c374ce5b115d7ad"
+    },
+    {
+      "file": "spotify-100k-submission.zip",
+      "bytes": 35387364,
+      "sha256": "ba921787ea1b1f5d93870296b45b521eebb5ab752bb4c207e8985121d367069d"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "known_api_usd": "4.702716959",
+  "unresolved_reserved_usd": "0.019510875",
+  "known_plus_reservations_usd": "4.722227834",
+  "approved_total_api_cap_usd": "7.00",
+  "within_allocated_boundary": true,
+  "experiments": [
+    {
+      "directory": "runs/pilot-live",
+      "known_usd": "0.008893546",
+      "unresolved_reserved_usd": "0.01207725",
+      "unresolved_attempts": 6
+    },
+    {
+      "directory": "runs/pilot-benchmark",
+      "known_usd": "0.007073404",
+      "unresolved_reserved_usd": "0",
+      "unresolved_attempts": 0
+    },
+    {
+      "directory": "runs/system-checks",
+      "known_usd": "0.00059824",
+      "unresolved_reserved_usd": "0",
+      "unresolved_attempts": 0
+    },
+    {
+      "directory": "runs/checkpoint-500",
+      "known_usd": "0.024163929",
+      "unresolved_reserved_usd": "0",
+      "unresolved_attempts": 0
+    },
+    {
+      "directory": "runs/checkpoint-10000",
+      "known_usd": "0.476171044",
+      "unresolved_reserved_usd": "0",
+      "unresolved_attempts": 0
+    },
+    {
+      "directory": "runs/golden-evaluation",
+      "known_usd": "0.002400132",
+      "unresolved_reserved_usd": "0",
+      "unresolved_attempts": 0
+    },
+    {
+      "directory": "runs/final-100k",
+      "known_usd": "4.183416664",
+      "unresolved_reserved_usd": "0.007433625",
+      "unresolved_attempts": 3
+    }
+  ],
+  "provider_invoice_reconciled": false,
+  "hosting_and_local_compute": "excluded"
+}

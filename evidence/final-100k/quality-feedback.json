@@ -1,0 +1,497 @@
+{
+  "selected_sample": 5000,
+  "valid_comparisons": 4990,
+  "failed_verifications": 10,
+  "confusion": {
+    "topic": {
+      "other -> other": 2936,
+      "usability -> usability": 614,
+      "playback -> playback": 310,
+      "billing -> billing": 306,
+      "catalog -> catalog": 195,
+      "usability -> playback": 67,
+      "usability -> catalog": 65,
+      "usability -> other": 64,
+      "downloads -> downloads": 56,
+      "access -> access": 54,
+      "other -> catalog": 46,
+      "usability -> billing": 40,
+      "playback -> other": 33,
+      "catalog -> other": 29,
+      "billing -> other": 27,
+      "playback -> usability": 15,
+      "other -> usability": 15,
+      "billing -> usability": 15,
+      "other -> billing": 11,
+      "other -> playback": 10,
+      "playback -> billing": 9,
+      "support -> support": 8,
+      "playback -> downloads": 8,
+      "billing -> catalog": 7,
+      "playback -> catalog": 6,
+      "usability -> downloads": 5,
+      "downloads -> other": 4,
+      "catalog -> usability": 3,
+      "downloads -> playback": 3,
+      "billing -> playback": 3,
+      "other -> downloads": 3,
+      "billing -> downloads": 3,
+      "catalog -> billing": 3,
+      "catalog -> playback": 2,
+      "playback -> access": 2,
+      "downloads -> usability": 2,
+      "support -> other": 2,
+      "billing -> access": 1,
+      "catalog -> downloads": 1,
+      "access -> downloads": 1,
+      "other -> access": 1,
+      "usability -> support": 1,
+      "access -> playback": 1,
+      "access -> other": 1,
+      "access -> billing": 1,
+      "playback -> support": 1
+    },
+    "intent": {
+      "praise -> praise": 1919,
+      "complaint -> complaint": 1890,
+      "unclear -> unclear": 535,
+      "cancellation -> cancellation": 174,
+      "praise -> unclear": 110,
+      "request -> request": 101,
+      "complaint -> unclear": 72,
+      "complaint -> request": 40,
+      "cancellation -> complaint": 31,
+      "unclear -> complaint": 21,
+      "complaint -> praise": 18,
+      "request -> complaint": 18,
+      "unclear -> praise": 15,
+      "request -> unclear": 11,
+      "complaint -> cancellation": 7,
+      "unclear -> request": 6,
+      "cancellation -> unclear": 5,
+      "praise -> complaint": 4,
+      "unclear -> cancellation": 4,
+      "cancellation -> request": 3,
+      "cancellation -> praise": 2,
+      "request -> praise": 2,
+      "praise -> request": 2
+    },
+    "severity": {
+      "1 -> 1": 2716,
+      "2 -> 2": 1030,
+      "3 -> 3": 518,
+      "4 -> 4": 171,
+      "2 -> 3": 170,
+      "2 -> 1": 112,
+      "4 -> 3": 111,
+      "1 -> 2": 54,
+      "3 -> 2": 36,
+      "3 -> 4": 25,
+      "2 -> 4": 14,
+      "1 -> 3": 12,
+      "2 -> 5": 6,
+      "5 -> 5": 5,
+      "1 -> 4": 3,
+      "4 -> 2": 2,
+      "3 -> 1": 2,
+      "5 -> 2": 1,
+      "4 -> 1": 1,
+      "4 -> 5": 1
+    },
+    "needs_review": {
+      "False -> False": 2157,
+      "True -> False": 1662,
+      "True -> True": 1108,
+      "False -> True": 63
+    }
+  },
+  "examples": [
+    {
+      "field": "topic",
+      "review_id": "000398f2-7667-4fa2-8c20-f5e1ec8fb8dd",
+      "source": "App has become unusable since the new update. So disappointing.",
+      "first": "usability",
+      "verifier": "other",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "topic",
+      "review_id": "006c0617-920d-42aa-a723-34700531fc2f",
+      "source": "Blood useless app It gives you 2-3 adds after every song and forces you to buy premium and the adds are irritating af Autoplay has stopped working Unless you can buy premium this app is useless for you",
+      "first": "usability",
+      "verifier": "billing",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "topic",
+      "review_id": "00841cbf-c015-4595-83d9-324150c8fd67",
+      "source": "It's okay untill I run out of skips and it plays any song that isn't on my playlist",
+      "first": "usability",
+      "verifier": "playback",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "topic",
+      "review_id": "014ce1a3-7bdb-4bca-827a-6213875cf2ca",
+      "source": "Spotify is so amazing and easy to use it",
+      "first": "usability",
+      "verifier": "other",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "topic",
+      "review_id": "01acf9f3-659b-40ef-b696-d969d69741df",
+      "source": "The permanent shuffle play is annoying and also the app frequently stops so do the right thing and fix it Please remove the permanent shuffle play -Thank you",
+      "first": "usability",
+      "verifier": "playback",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "intent",
+      "review_id": "00630874-b2b5-4856-9653-69fb6ab96102",
+      "source": "To me it's really good it's not the best but it's still good",
+      "first": "complaint",
+      "verifier": "praise",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "intent",
+      "review_id": "01799004-8b95-4ac8-bc64-2ebab75bf58e",
+      "source": "Hate 😡",
+      "first": "complaint",
+      "verifier": "unclear",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "intent",
+      "review_id": "025abad4-6c50-4ea6-bb38-ac8bf39cc9d0",
+      "source": "Please keep something free 🙃",
+      "first": "unclear",
+      "verifier": "request",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "intent",
+      "review_id": "034be453-570e-4bbc-903c-2396b8775659",
+      "source": "Da best fs",
+      "first": "praise",
+      "verifier": "unclear",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "intent",
+      "review_id": "03c1b77e-5600-4143-a56a-1238db4091b6",
+      "source": "THATS VERY CRAZY AND SUPERFANTASTIC",
+      "first": "praise",
+      "verifier": "unclear",
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "severity",
+      "review_id": "000c1149-e4a1-4bc0-8fb9-c17434dc67fc",
+      "source": "it's great and all but everytime I listen to my liked songs Playlist a random song comes on and it's not even on my Playlist thats just stupid",
+      "first": 2,
+      "verifier": 3,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "severity",
+      "review_id": "005d7110-a229-4ede-b1c4-384966e49804",
+      "source": "My favourite app is now completely ruined you ruined your app haha imma deleting this appp bye bye Spotify....... Wynk is better than you huh",
+      "first": 2,
+      "verifier": 1,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "severity",
+      "review_id": "01799004-8b95-4ac8-bc64-2ebab75bf58e",
+      "source": "Hate 😡",
+      "first": 2,
+      "verifier": 1,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "severity",
+      "review_id": "01acf9f3-659b-40ef-b696-d969d69741df",
+      "source": "The permanent shuffle play is annoying and also the app frequently stops so do the right thing and fix it Please remove the permanent shuffle play -Thank you",
+      "first": 2,
+      "verifier": 3,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "severity",
+      "review_id": "01dda960-af83-4c0a-b414-3a0fdefff969",
+      "source": "Why ain't the canvas option showing in the settings?",
+      "first": 1,
+      "verifier": 2,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "needs_review",
+      "review_id": "000b795c-123f-4d76-8fb6-e49983397c81",
+      "source": "Very good",
+      "first": true,
+      "verifier": false,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "needs_review",
+      "review_id": "0038eef5-f6c2-43f8-9cd6-e5bf379bf5fb",
+      "source": "Finally removed waze, so 5 stars as promised.",
+      "first": true,
+      "verifier": false,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "needs_review",
+      "review_id": "005d7110-a229-4ede-b1c4-384966e49804",
+      "source": "My favourite app is now completely ruined you ruined your app haha imma deleting this appp bye bye Spotify....... Wynk is better than you huh",
+      "first": true,
+      "verifier": false,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "needs_review",
+      "review_id": "006c6004-3f3e-456c-b090-54f34aac8985",
+      "source": "Great",
+      "first": true,
+      "verifier": false,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    },
+    {
+      "field": "needs_review",
+      "review_id": "009b83e9-1c6c-46b0-9326-6a6265e2d158",
+      "source": "It's too good",
+      "first": true,
+      "verifier": false,
+      "meaning": "Observed disagreement; neither model is assumed to be ground truth."
+    }
+  ],
+  "failures": [
+    {
+      "attempt_ids": [
+        "db5badba7fe74852ab9ea30b221d700b",
+        "5a3ad6c4a1394980bf739c755f751ba5"
+      ],
+      "disagreements": [],
+      "error": "Both independent responses normalized source dere to there; evidence quote is not verbatim. Bounded retries exhausted. No manual prediction correction.",
+      "first_prediction": {
+        "entities": [
+          "lyrics",
+          "ads",
+          "premium"
+        ],
+        "evidence_quote": "Love to listen on dis app..😃 And de lyrics r also dere so easy to learn also if any competition is held for singing.... Loved it... But de thing is tat dere are many many ads if we've not in the premium... Else everything good enough for dis app as it is to listen songs... I don't think dis rewiew will be taken in consideration but if it is den i appreciate tat.. Regards.",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": 0.4650000000000001,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "1118521e-67a6-4966-9148-cf73f5f555e4",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "5a3ad6c4a1394980bf739c755f751ba5"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [
+          "Spotify",
+          "Ads",
+          "ad",
+          "spotify",
+          "playlists",
+          "premium"
+        ],
+        "evidence_quote": "Spotify does nothing short of bombard free plan users with advertisements every chance it gets. The most I ever got at once was 13, but I usually get 7-8. Ads also do not come in at the so called \"30 minutes of ad free listening,\" but instead come around every 15-20minutes every single time. Now, spotify is refusing to stop playing suggested songs from my playlists. I can't listen to MY music anymore, just what spotify wants me to. Spotify isn't worth getting unless you're paying for premium.",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1.0,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "3d2d5338-8186-44f8-b411-c7345180c334",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "52ae3f741b724dc89858d4cccb9ddbe6"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [
+          "lyrics",
+          "Spotify"
+        ],
+        "evidence_quote": "The app is the best but it's the new feature thats pulling the stars where u have to pay up for the lyrics it's very close to just being an paied app i really think we should be able to see the lyrics it's a really important part of Spotify hope u up ur game",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.31499999999999995,
+        "severity": 3,
+        "topic": "billing"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "8445fb00-52db-4fda-bcad-c1a5d5631db3",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "0ac88d6851f843d7bd20c57d833a501f"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [
+          "ads",
+          "Spotify",
+          "premium",
+          "spotify"
+        ],
+        "evidence_quote": "Every thing is ok but in every 5 min there ads now when I downloaded it there was ads every 30 min . Spotify is forcing us to subscribe it premium. everything is good even sound quality and but still spotify is better than gaana app . this ads are really annoying and what's worst is they doing there's ads only not for other brand for income . I Know ads are but not like this if this is not fixed I m going for apple music or any GOOD music app it's better than spotify.",
+        "intent": "cancellation",
+        "needs_review": true,
+        "sentiment": -0.475,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "908e81f4-324d-45d4-8104-0d4abd6b8e52",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "1768e8e59da34af6a18bcf21437bc69e"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [
+          "spotify"
+        ],
+        "evidence_quote": "Its amazing, I mean, its spotify. But what really annoys me is that ots easy to accidently click off things. This year I have missed countless things, like my first played song notification, because it makes it to easy to click out of. also, REMOVE THE DREAM SMP CATAGORY. I JUST WANT TO LISTEN TO LOVEJOY BRO.",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.265,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "91278b5d-8ac0-4479-aecb-3f18d17c3e3a",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "4d1ed609b7994ba6a081782610f457eb"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [
+          "ADS",
+          "SPOTIFY",
+          "QUEUE"
+        ],
+        "evidence_quote": "IT WAS EXPETIONALLY A GOOD APPLICATION FOR MUSIC 🎵 AND LESS ADS AND SPOTIFY IS THE BEST APP FOR MUSIC LOVERS AND IT'S INTERFACE IS SO GOOD AND THEIR SUPPORT TEAM IS AWESOME 😎 ...... KEEP UPGRADING SPOTIFY AND REGULAR UPDATES WITHOUT ANY GLITCHES..... SPOTIFY IS EXCELLENT AND KEEP ON DOING THE SAME FOR BEING THE BEST APP !!!!! ❤️ AND THE ONLY PROBLEM IS THE QUEUE OPTION IS NOT THERE SOMETIMES ..... PLEASE 🙏 FIX THAT ISSUE........., REGARDS, SPOTIFY TEAM.",
+        "intent": "complaint",
+        "needs_review": true,
+        "sentiment": 0.96,
+        "severity": 1,
+        "topic": "usability"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "985498af-9201-421a-a84d-241c819e4a36",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "0b8c0e02a4334cf0b293dca255946aa9"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [
+          "SPOTIFY"
+        ],
+        "evidence_quote": "I like this app becajse it has alot pf songs that i love. THANK YOU SPOTIFY",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9950000000000001,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "9fe6c96d-1d8c-46d5-a537-1fa0bb1db23a",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "d9909fee943c444496690d32a20b80c2"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [
+          "Playlist"
+        ],
+        "evidence_quote": "No idea if I'm the only one with this issue but the game has updated recently and I have trouble with the controls. I try to play a song and there's no longer and icon its just a bunch of random artists and songs. The app before was fine and stuff but now its worse. Also it adds suggested songs to my Playlist or a song. Like say I search up a song and then its a whole entire Playlist its hit or miss if you actually get the song and not just a suggested song. Great app but needs work",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.345,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "b7dc4f2a-2982-4f03-9e3e-d36856211676",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "eee46b665b424680b7d780f22556d3c0"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [],
+        "evidence_quote": "𝐈 𝐥𝐨𝐯𝐞 𝐭𝐡𝐢𝐬, 𝐭𝐡𝐢𝐬 𝐢𝐬 𝐟𝐫𝐞𝐞 𝐧𝐨𝐭 𝐥𝐢𝐤𝐞 𝐫𝐞𝐬𝐬𝐨 𝐢 𝐥𝐢𝐤𝐞 𝐬𝐩𝐨𝐭𝐢𝐟𝐲 𝐛𝐞𝐭𝐭𝐞𝐫",
+        "intent": "praise",
+        "needs_review": true,
+        "sentiment": 0.865,
+        "severity": 1,
+        "topic": "billing"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "ce8ee1b8-39a7-4a53-a336-f648f86ea29a",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "242766079e2d4e709d2a4d3a364ee386"
+    },
+    {
+      "disagreements": [],
+      "error": "Independent response invalid after bounded retries; excluded from valid comparisons, counted as failed verification.",
+      "first_prediction": {
+        "entities": [],
+        "evidence_quote": "i hate this applictation 👎",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.995,
+        "severity": 2,
+        "topic": "other"
+      },
+      "independent_prediction": {},
+      "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+      "review_id": "f6a4f568-ca67-453d-accb-c386ebe772af",
+      "sentiment_absolute_difference": null,
+      "status": "failed",
+      "verifier_request_id": "94aa9e2cff9c460bb7cc62e83c5c74d1"
+    }
+  ],
+  "labels_changed_after_verification": 0,
+  "reference_labels_supplied_to_models": false
+}

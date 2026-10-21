@@ -1,0 +1,15 @@
+{
+  "status": "public_browser_verified",
+  "url": "https://spotify-review-evidence.jenna851121.chatgpt.site",
+  "access": "anonymous-public",
+  "browser_checks": [
+    "Previously signed-out login gate replaced by complete dashboard",
+    "100000 classifications and project cost visible",
+    "5000 sample outcomes,4990 valid,10 failed visible",
+    "Review source,hash,labels and independent comparison open successfully",
+    "Issue rankings and grounded recommendation visible"
+  ],
+  "full_database_integrity": "Passed before access change; unchanged deployment; see dashboard-final-private-checks.json",
+  "anonymous_cli_check": "Cloudflare 403 error 1010; no public API full-scan success claimed",
+  "screenshot": "dashboard-final-public.png"
+}

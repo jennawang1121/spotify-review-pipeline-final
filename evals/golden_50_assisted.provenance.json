@@ -5,5 +5,14 @@
   "evidence_quote": "Assistant extracted verbatim from source text",
   "independently_human_labelled_all_fields": false,
   "prompts_tuned_on_these_answers": false,
-  "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca"
+  "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+  "student_post_edit_review": {
+    "confirmed": true,
+    "confirmation_date": "2026-10-20",
+    "timezone": "America/Los_Angeles",
+    "source": "Student explicit chat response to per-row review question",
+    "statement": "已逐條複核，標注符合我的判讀",
+    "scope": "All 50 revised reference rows; prior AI assistance remains disclosed",
+    "original_blind_independent_annotation": false
+  }
 }

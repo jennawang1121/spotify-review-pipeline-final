@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "isolated_checkout": true,
+  "model_keys_required": false,
+  "tests_passed": 47,
+  "release_archives_restored": true,
+  "ranking_matches": true,
+  "official_checker_reproduced": "review_required",
+  "issue_counts": {
+    "invalid_usage": 6
+  },
+  "cold_cost_reproduced_usd": "0.007073404"
+}

@@ -1,32 +1,28 @@
 # Rubric-to-evidence tracker
 
-Current finalization status, October 20, 2026. This is an evidence map, not an awarded or predicted grade. The complete source is ingested; the selected minimum scope has 100,000 valid classifications and 13 empty quarantines. Independent final verification and memo generation are still running.
+Final evidence map, October 20, 2026. This is not an awarded or predicted grade. The original 660,622-row source is profiled; the revised selected minimum contains 100,000 valid nonempty classifications and 13 empty quarantines. Other nonempty source rows remain outside the selected scope.
 
-| Criterion | Evidence | Remaining work / limitation |
+| Criterion | Final evidence | Limitation |
 |---|---|---|
-| D1 Accessible setup/artifacts | Public GitHub repository, runnable standard-library Python, offline calculator, schema and UI source | Final artifacts/release and final link check |
-| D2 Architecture/schema/provenance | Four separate roles/instructions; exact original IDs and hashes; validated final classifications | Final role handoffs and export/checker report |
-| D3 Correct numerical evidence | All 100k baseline scores computed offline; production SQL agrees on every ranking; every deployed ID/hash/status matched | Final memo numeric/citation audit |
-| D4 Recommendation/alternatives/limits | Historical development recommendations; final analysis is available | Final model recommendation and student argument review |
-| T1 Human gold/per-field/error analysis | 50 student-supplied references, frozen-model predictions and per-field diagnostics; assistance is disclosed | Fully independent human provenance is not established for assisted severity/entity/quote fields. Do not describe diagnostic agreement as certified accuracy |
-| T2 Independent/system checks | Blind seeded verification, real injection/control tests, planted-error detection, inspected final examples | Complete final 5,000 selected checks; report failed checks and valid comparisons separately |
-| T3 Measured cost/recovery | Actual fixed cold/warm 100, editable-rate calculator, real resume recording, bounded retries/budget, saved timeout/conflict evidence | Final cost/runtime report; unknown provider usage remains unknown with reservations held |
-| W1 Coverage | Full 660,622 ingestion; all selected 100,000 nonempty reviews valid; 13 empty quarantines | Final unmodified checker. The other 560,609 nonempty reviews are outside the selected scope |
-| W2 Runnable staged program | Arbitrary-CSV runner, completed 100/500/10k, final classifications, 47 offline tests | Final downstream completion and measured zero-call warm replay |
-| W3 Deployed product | Private read-only 100k Worker/D1 dashboard; all IDs/hashes/statuses and all rankings match local results | Replace pending verification/memo metadata, validate final view and enable authorized public access |
+| D1 Accessible setup/artifacts | Public repository, release archives and manifest, runnable Python and offline commands in README | Download the saved-run archive for database replay |
+| D2 Architecture/schema/provenance | Four model roles, constrained schema, original IDs and exact hashes, full call lineage in release | Unknown usage is kept visible |
+| D3 Reproducible numbers | Offline ranking/claims, all deployed rankings matched, memo-audit.json | Ranking uses broad single-primary topics |
+| D4 Recommendation/alternatives/limits | Final editorial memo plus unmodified model draft, source and claim citations | Student product-argument review is separately recorded if received |
+| T1 Human labels/error analysis | 50 student-reviewed reference rows, per-field diagnostics and inspected failures | AI corrections/extracted quotes disclosed; not originally fully blind human labeling |
+| T2 Independent/system checks | 5,000 seeded checks: 4,990 valid and 10 failed; real control/injection checks | Model agreement is not human accuracy; failures do not count as agreements |
+| T3 Measured cost/recovery | Fixed cold/warm pilot, editable rates, real resume recording, final warm zero calls, total known $4.702716959 | $0.019510875 outstanding reservations across project; invoice not reconciled |
+| W1 Coverage | All selected 100,000 valid, 13 quarantined, no missing or unresolved classifications | Unmodified checker review_required: six unknown token fields on three failed requests |
+| W2 Runnable stages/resume | Arbitrary CSV runner, completed checkpoints, 47 offline tests, final zero-call warm run | Runtime interruptions and all real retries preserved |
+| W3 Deployed database | Final Worker/D1 dashboard; full ID/hash/status and ranking checks | See final public check artifact for actual access verification |
 
-## Current evidence links
+## Key links
 
-- [Complete classification/source audit](evidence/final-classification-audit/validation.json)
-- [Final deterministic ranking](evidence/final-classification-audit/ranking.csv)
-- [Deployed database integrity](evidence/dashboard-classification-private-checks.json)
-- [Inspected final model/engineering failures](evals/final-inspected-failures.md)
-- [Golden 50 diagnostics](evals/golden_50_assisted_evaluation.json)
-- [Assistance provenance](evals/golden_50_assisted.provenance.json)
-- [Real system checks](evals/system-checks/README.md)
-- [Measured 100-review cold/warm](cost/report.md)
-- [10k passing checker](evidence/checkpoint-10000/official-check-complete-lineage.json)
-- [Actual terminal interruption/resume recording](evidence/recovery-10k/stop-resume.html)
-- [Detailed current audit](docs/criteria-audit-2026-10-20.md)
+- [Unmodified official checker](evidence/final-100k/official-check.json)
+- [Final recommendation](evidence/final-100k/memo.editorial.md)
+- [Cost](evidence/final-100k/project-cost.json) and [warm replay](evidence/final-100k/warm-check.json)
+- [Independent feedback](evidence/final-100k/quality-feedback.md)
+- [Golden 50 provenance and student attestation](evals/golden_50_assisted.provenance.json)
+- [Public dashboard integrity](evidence/dashboard-final-public-checks.json)
+- [Release manifest](evidence/final-artifact-manifest.json)
 
-Do not hide failures, replace unknown usage with zero, relabel assistant-edited reference fields as independently human, or describe the final assignment as complete while publication and downstream evidence remain unfinished.
+No unknown token usage was replaced with zero. Neither verifier agreement nor student acceptance of assisted references certifies population accuracy.

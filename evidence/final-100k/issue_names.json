@@ -1,0 +1,36 @@
+{
+  "issues": [
+    {
+      "issue_id": "issue-usability",
+      "name": "Ad interruptions and premium limitations"
+    },
+    {
+      "issue_id": "issue-other",
+      "name": "Unspecified app dissatisfaction"
+    },
+    {
+      "issue_id": "issue-playback",
+      "name": "Playback, streaming, and audio problems"
+    },
+    {
+      "issue_id": "issue-billing",
+      "name": "Subscription, payment, and premium access issues"
+    },
+    {
+      "issue_id": "issue-access",
+      "name": "Login and account access problems"
+    },
+    {
+      "issue_id": "issue-catalog",
+      "name": "Missing content and lyrics issues"
+    },
+    {
+      "issue_id": "issue-downloads",
+      "name": "Downloads and offline library problems"
+    },
+    {
+      "issue_id": "issue-support",
+      "name": "Unresponsive or poor customer support"
+    }
+  ]
+}

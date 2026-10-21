@@ -1,0 +1,27 @@
+{
+  "alternatives": "Playback problems are an actionable alternative, ranked behind usability and the broad “other” group: they have fewer complaints than usability issues but greater mean severity ({{claim:issue-playback:mean_severity}} versus {{claim:issue-usability:mean_severity}}), with a lower priority score ({{claim:issue-playback:priority_score}} versus {{claim:issue-usability:priority_score}}). Billing is another alternative, with priority score {{claim:issue-billing:priority_score}}. The unspecified “other” group has the most complaints ({{claim:issue-other:complaint_count}}), but its low mean severity ({{claim:issue-other:mean_severity}}) and unclear contents make it less actionable. Login/access concerns show higher mean severity ({{claim:issue-access:mean_severity}}), but a lower priority score ({{claim:issue-access:priority_score}}). The “other” group is second by the saved priority score ({{claim:issue-other:priority_score}}); it should receive a separate taxonomy audit before a specific product intervention is chosen. The decision to investigate playback alongside usability is a judgment about actionability, not a claim that playback ranks second. Playback evidence includes delayed audio after pause (ec63e4ff-1757-4a23-8262-ff90fb6cbea9); billing evidence includes an apparent premium entitlement mismatch (a7a157c0-a852-4d49-b770-dc9b01a3a504), and access evidence includes repeated login errors (470b836e-9027-4e6f-9673-c0aad1b03c0b).",
+  "claim_ids": [
+    "issue-usability:priority_score",
+    "issue-usability:complaint_count",
+    "issue-playback:mean_severity",
+    "issue-usability:mean_severity",
+    "issue-playback:priority_score",
+    "issue-billing:priority_score",
+    "issue-other:complaint_count",
+    "issue-other:mean_severity",
+    "issue-access:mean_severity",
+    "issue-access:priority_score",
+    "issue-other:priority_score"
+  ],
+  "limitations": "This is a historical, self-selected review window, not a representative measure of Spotify customers or current conditions. All selected nonempty reviews have schema-valid classifications, but schema validity does not establish semantic accuracy. Empty texts are quarantined. Topic groups combine distinct problems, and “other” is especially underspecified. Examples are the first saved members per issue, illustrative rather than representative; review flags and model disagreements remain visible. Cancellation language indicates intent, not observed churn; these aggregates do not establish causal retention effects. The unmodified official checker confirms selected classification coverage and ranking calculations but returns review_required because failed provider requests lack token usage. Missing usage is preserved rather than replaced with zero. Independent verifier failures remain failures and do not count as agreements. Golden reference labels were reviewed by the student after disclosed AI assistance; this is not a fully independent blind reference. This editorial revision corrects stale coverage language in the saved model draft and still requires student review of the product argument.",
+  "priority_issue_id": "issue-usability",
+  "recommendation": "Prioritize reducing ad interruptions and clarifying premium limitations. Usability has the highest saved priority score ({{claim:issue-usability:priority_score}}), with {{claim:issue-usability:complaint_count}} complaints; this is more actionable than the largest but vague “other” group. Examples describe frequent ads and reluctance to subscribe (a606e006-1a06-4fe7-8aab-52a66e6f33bc; 5dd75faf-d5d9-4827-909a-b0db1f4014c2), while another user contrasts interruptions with alternatives (a54d3421-8f4a-40e7-91e0-f0b3a1580579). Treat these as qualitative illustrations, not representative evidence or proof of churn. Start by reviewing complaint examples across the broad usability category, then test a bounded ad-interruption and premium-expectation change. The aggregate score does not isolate the share attributable to ads, so this is a testable product hypothesis rather than a demonstrated category-wide cause. Track interrupted listening sessions and complaints alongside subscription conversion; do not promise a revenue or retention lift from these reviews.",
+  "review_ids": [
+    "a606e006-1a06-4fe7-8aab-52a66e6f33bc",
+    "5dd75faf-d5d9-4827-909a-b0db1f4014c2",
+    "a54d3421-8f4a-40e7-91e0-f0b3a1580579",
+    "ec63e4ff-1757-4a23-8262-ff90fb6cbea9",
+    "a7a157c0-a852-4d49-b770-dc9b01a3a504",
+    "470b836e-9027-4e6f-9673-c0aad1b03c0b"
+  ]
+}

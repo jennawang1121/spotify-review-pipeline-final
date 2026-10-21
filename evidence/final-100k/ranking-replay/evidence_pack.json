@@ -1,0 +1,448 @@
+{
+  "schema": "a5-audit-v1-ranking",
+  "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+  "provenance_kinds": [
+    "provider_response"
+  ],
+  "coverage": {
+    "statuses": {
+      "completed": 100000,
+      "quarantined": 13
+    },
+    "cache_reused_records": 21901,
+    "completed_provenance": {
+      "provider_response": 100000
+    },
+    "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
+    "official_contract_validated": false
+  },
+  "ranking": [
+    {
+      "issue_id": "issue-usability",
+      "complaint_count": 13126,
+      "severity_sum": 32628,
+      "priority_score": 32628,
+      "mean_severity": "2.485753",
+      "rank": 1
+    },
+    {
+      "issue_id": "issue-other",
+      "complaint_count": 13605,
+      "severity_sum": 26813,
+      "priority_score": 26813,
+      "mean_severity": "1.970820",
+      "rank": 2
+    },
+    {
+      "issue_id": "issue-playback",
+      "complaint_count": 6879,
+      "severity_sum": 21611,
+      "priority_score": 21611,
+      "mean_severity": "3.141590",
+      "rank": 3
+    },
+    {
+      "issue_id": "issue-billing",
+      "complaint_count": 6519,
+      "severity_sum": 16887,
+      "priority_score": 16887,
+      "mean_severity": "2.590428",
+      "rank": 4
+    },
+    {
+      "issue_id": "issue-access",
+      "complaint_count": 1411,
+      "severity_sum": 5333,
+      "priority_score": 5333,
+      "mean_severity": "3.779589",
+      "rank": 5
+    },
+    {
+      "issue_id": "issue-catalog",
+      "complaint_count": 2088,
+      "severity_sum": 5309,
+      "priority_score": 5309,
+      "mean_severity": "2.542625",
+      "rank": 6
+    },
+    {
+      "issue_id": "issue-downloads",
+      "complaint_count": 915,
+      "severity_sum": 2869,
+      "priority_score": 2869,
+      "mean_severity": "3.135519",
+      "rank": 7
+    },
+    {
+      "issue_id": "issue-support",
+      "complaint_count": 96,
+      "severity_sum": 221,
+      "priority_score": 221,
+      "mean_severity": "2.302083",
+      "rank": 8
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "issue-usability:complaint_count",
+      "issue_id": "issue-usability",
+      "metric": "complaint_count",
+      "value": 13126
+    },
+    {
+      "claim_id": "issue-usability:severity_sum",
+      "issue_id": "issue-usability",
+      "metric": "severity_sum",
+      "value": 32628
+    },
+    {
+      "claim_id": "issue-usability:mean_severity",
+      "issue_id": "issue-usability",
+      "metric": "mean_severity",
+      "value": "2.485753"
+    },
+    {
+      "claim_id": "issue-usability:priority_score",
+      "issue_id": "issue-usability",
+      "metric": "priority_score",
+      "value": 32628
+    },
+    {
+      "claim_id": "issue-other:complaint_count",
+      "issue_id": "issue-other",
+      "metric": "complaint_count",
+      "value": 13605
+    },
+    {
+      "claim_id": "issue-other:severity_sum",
+      "issue_id": "issue-other",
+      "metric": "severity_sum",
+      "value": 26813
+    },
+    {
+      "claim_id": "issue-other:mean_severity",
+      "issue_id": "issue-other",
+      "metric": "mean_severity",
+      "value": "1.970820"
+    },
+    {
+      "claim_id": "issue-other:priority_score",
+      "issue_id": "issue-other",
+      "metric": "priority_score",
+      "value": 26813
+    },
+    {
+      "claim_id": "issue-playback:complaint_count",
+      "issue_id": "issue-playback",
+      "metric": "complaint_count",
+      "value": 6879
+    },
+    {
+      "claim_id": "issue-playback:severity_sum",
+      "issue_id": "issue-playback",
+      "metric": "severity_sum",
+      "value": 21611
+    },
+    {
+      "claim_id": "issue-playback:mean_severity",
+      "issue_id": "issue-playback",
+      "metric": "mean_severity",
+      "value": "3.141590"
+    },
+    {
+      "claim_id": "issue-playback:priority_score",
+      "issue_id": "issue-playback",
+      "metric": "priority_score",
+      "value": 21611
+    },
+    {
+      "claim_id": "issue-billing:complaint_count",
+      "issue_id": "issue-billing",
+      "metric": "complaint_count",
+      "value": 6519
+    },
+    {
+      "claim_id": "issue-billing:severity_sum",
+      "issue_id": "issue-billing",
+      "metric": "severity_sum",
+      "value": 16887
+    },
+    {
+      "claim_id": "issue-billing:mean_severity",
+      "issue_id": "issue-billing",
+      "metric": "mean_severity",
+      "value": "2.590428"
+    },
+    {
+      "claim_id": "issue-billing:priority_score",
+      "issue_id": "issue-billing",
+      "metric": "priority_score",
+      "value": 16887
+    },
+    {
+      "claim_id": "issue-access:complaint_count",
+      "issue_id": "issue-access",
+      "metric": "complaint_count",
+      "value": 1411
+    },
+    {
+      "claim_id": "issue-access:severity_sum",
+      "issue_id": "issue-access",
+      "metric": "severity_sum",
+      "value": 5333
+    },
+    {
+      "claim_id": "issue-access:mean_severity",
+      "issue_id": "issue-access",
+      "metric": "mean_severity",
+      "value": "3.779589"
+    },
+    {
+      "claim_id": "issue-access:priority_score",
+      "issue_id": "issue-access",
+      "metric": "priority_score",
+      "value": 5333
+    },
+    {
+      "claim_id": "issue-catalog:complaint_count",
+      "issue_id": "issue-catalog",
+      "metric": "complaint_count",
+      "value": 2088
+    },
+    {
+      "claim_id": "issue-catalog:severity_sum",
+      "issue_id": "issue-catalog",
+      "metric": "severity_sum",
+      "value": 5309
+    },
+    {
+      "claim_id": "issue-catalog:mean_severity",
+      "issue_id": "issue-catalog",
+      "metric": "mean_severity",
+      "value": "2.542625"
+    },
+    {
+      "claim_id": "issue-catalog:priority_score",
+      "issue_id": "issue-catalog",
+      "metric": "priority_score",
+      "value": 5309
+    },
+    {
+      "claim_id": "issue-downloads:complaint_count",
+      "issue_id": "issue-downloads",
+      "metric": "complaint_count",
+      "value": 915
+    },
+    {
+      "claim_id": "issue-downloads:severity_sum",
+      "issue_id": "issue-downloads",
+      "metric": "severity_sum",
+      "value": 2869
+    },
+    {
+      "claim_id": "issue-downloads:mean_severity",
+      "issue_id": "issue-downloads",
+      "metric": "mean_severity",
+      "value": "3.135519"
+    },
+    {
+      "claim_id": "issue-downloads:priority_score",
+      "issue_id": "issue-downloads",
+      "metric": "priority_score",
+      "value": 2869
+    },
+    {
+      "claim_id": "issue-support:complaint_count",
+      "issue_id": "issue-support",
+      "metric": "complaint_count",
+      "value": 96
+    },
+    {
+      "claim_id": "issue-support:severity_sum",
+      "issue_id": "issue-support",
+      "metric": "severity_sum",
+      "value": 221
+    },
+    {
+      "claim_id": "issue-support:mean_severity",
+      "issue_id": "issue-support",
+      "metric": "mean_severity",
+      "value": "2.302083"
+    },
+    {
+      "claim_id": "issue-support:priority_score",
+      "issue_id": "issue-support",
+      "metric": "priority_score",
+      "value": 221
+    }
+  ],
+  "evidence": [
+    {
+      "issue_id": "issue-usability",
+      "examples": [
+        {
+          "review_id": "a606e006-1a06-4fe7-8aab-52a66e6f33bc",
+          "quote": "I need music wherever I go whatever o do and Spotify is great for that but these days we get adds to frequently so it's a but annoying but premium is great and music quality is perfect",
+          "needs_review": false
+        },
+        {
+          "review_id": "5dd75faf-d5d9-4827-909a-b0db1f4014c2",
+          "quote": "Adds are increasing. Annoying. As specially when working out. Otherwise i like the fact that spotify stays on in background if you switch screen. Musics gr8. And no i wont subscribe. Everything wants subscription, with way fuel and cost of living rises. Impossible",
+          "needs_review": false
+        },
+        {
+          "review_id": "a54d3421-8f4a-40e7-91e0-f0b3a1580579",
+          "quote": "If you like listening to adds this app is for you, but for music there are tons of better alternatives that let you enjoy songs with very minimal interruptions!",
+          "needs_review": false
+        }
+      ]
+    },
+    {
+      "issue_id": "issue-other",
+      "examples": [
+        {
+          "review_id": "09fde8c9-0894-469a-a877-cc936a93244f",
+          "quote": "Worst experience......",
+          "needs_review": true
+        },
+        {
+          "review_id": "1c5465bb-b754-4fdc-8b51-ae9e6853981c",
+          "quote": "Wrost app ...i. don't know what is the use of this app for listening. Only for listening ....install application",
+          "needs_review": true
+        },
+        {
+          "review_id": "19bde2f6-78df-4e78-9b7c-b9a6efacf796",
+          "quote": "unfriendly",
+          "needs_review": true
+        }
+      ]
+    },
+    {
+      "issue_id": "issue-playback",
+      "examples": [
+        {
+          "review_id": "ec63e4ff-1757-4a23-8262-ff90fb6cbea9",
+          "quote": "After the update to ask for Bluetooth permission (which it already had???), playback has some issues. Starting up from pause doesn't start audio right away. Sometimes this is resolved in a few seconds (tho I have to rewind) and sometimes it means I have to quit the app a few times. One time I even had to turn Bluetooth off and back on. There have also been issues streaming from my phone to a Chromecast. The notification bar controls also stop working after a while, which is very annoying.",
+          "needs_review": false
+        },
+        {
+          "review_id": "6344f653-1a48-44df-a9f7-d8a28bceee75",
+          "quote": "No music but still having 5G! Even though I have the best internet connection, spotify keeps on telling mee that I don't have internet connection. I have a premium account. I am expecting it to be good",
+          "needs_review": false
+        },
+        {
+          "review_id": "761e2a24-e140-450c-b728-dadeab319d9a",
+          "quote": "Bad quality audio with Google pixel 6 pro with BT devices.",
+          "needs_review": false
+        }
+      ]
+    },
+    {
+      "issue_id": "issue-billing",
+      "examples": [
+        {
+          "review_id": "33304a50-acee-4525-8fd9-5588100db615",
+          "quote": "I loved thia app I used it all the time to listen to music but you have to buy preimum to listen better. The thing is you also have to pay I would recommend this but when you listennto songs it gives you so many adds and not even the song you would like to listen",
+          "needs_review": true
+        },
+        {
+          "review_id": "a7a157c0-a852-4d49-b770-dc9b01a3a504",
+          "quote": "I got premium and in account details Spotify is free it is showing but still i am getting ads. I don't know why and what is happening.",
+          "needs_review": false
+        },
+        {
+          "review_id": "0b6d6b57-0c5c-4a34-952e-860e5a096df0",
+          "quote": "ini kenapa unable to connect mulu pas mau upgrade ke premium ya",
+          "needs_review": false
+        }
+      ]
+    },
+    {
+      "issue_id": "issue-access",
+      "examples": [
+        {
+          "review_id": "470b836e-9027-4e6f-9673-c0aad1b03c0b",
+          "quote": "Shows an error every time I try to log in. When I was finally able to log in from a new email address it says that I am not connected to the internet. This is really frustrating.",
+          "needs_review": false
+        },
+        {
+          "review_id": "a0f9b23c-2326-4599-897f-3a6de9c1ea63",
+          "quote": "Can't sign in using Google!!",
+          "needs_review": false
+        },
+        {
+          "review_id": "71de22dd-557c-4ab7-9a0c-858edfddd4b6",
+          "quote": "This is not working properly while login Worst sevice while login If anyone forget password then there is no any option of forgot Trying to login with Gmail link then it is saying link is expired",
+          "needs_review": false
+        }
+      ]
+    },
+    {
+      "issue_id": "issue-catalog",
+      "examples": [
+        {
+          "review_id": "0df91aea-2649-4eee-a8cc-4572925e4763",
+          "quote": "I am unable to view the lyrics after the new update. I tried re-installing the app as well.",
+          "needs_review": false
+        },
+        {
+          "review_id": "face89a8-77fa-4840-b25c-9e12cd036a34",
+          "quote": "It's good...but I can't find my fav song HEHEHE",
+          "needs_review": true
+        },
+        {
+          "review_id": "21011443-eafb-4bc2-895e-e5d14fe9c726",
+          "quote": "All tamil song lyrics are wrong 😑😐",
+          "needs_review": true
+        }
+      ]
+    },
+    {
+      "issue_id": "issue-downloads",
+      "examples": [
+        {
+          "review_id": "42d734bb-61ba-4848-a964-33296e71c9b3",
+          "quote": "Well the music and algorithms were great. Now liked songs are gone from phone and won't play music. Says Playlist are empty, but everything exists on PC version. Been days, of long depressing songless drives to work, ugh. Please fix this.",
+          "needs_review": false
+        },
+        {
+          "review_id": "f5cd8f75-aeb0-41aa-aecc-57e24bebacf6",
+          "quote": "Lost download",
+          "needs_review": true
+        },
+        {
+          "review_id": "509f4167-79d7-4cb6-a10e-90fde38dee03",
+          "quote": "am trying to download bt it keeps scanning",
+          "needs_review": true
+        }
+      ]
+    },
+    {
+      "issue_id": "issue-support",
+      "examples": [
+        {
+          "review_id": "23b03464-5add-4ecc-9e12-37ad10e97c54",
+          "quote": "I paid for the app for a long time- kept cutting out iver and over. Spoke with customer service which was a terrible experience. I had to repeat the issue over 15 times with different people then they just ignored me when I asked to speak with a manager as it had been handled so poorly. Went from a bad experience for a service I was paying for to absolutely terrible customer service where they do not care about the customer. Really disappointed",
+          "needs_review": true
+        },
+        {
+          "review_id": "6311b974-b025-4a9f-89be-783c33a7bbd7",
+          "quote": "doesnt respond to complains",
+          "needs_review": true
+        },
+        {
+          "review_id": "47d27687-25ed-4030-84cb-fe376eddce66",
+          "quote": "I sent in a help request months ago to figure out why my genre scroll isn't working, no contact or answer so far",
+          "needs_review": false
+        }
+      ]
+    }
+  ],
+  "sampling_note": "First three members per issue in saved membership order; illustrative, not representative sampling.",
+  "limitations": [
+    "Historical, self-selected reviews",
+    "Cancellation is intent, not observed churn",
+    "Topic-level groups may combine distinct issues",
+    "Human quote-support review required"
+  ]
+}

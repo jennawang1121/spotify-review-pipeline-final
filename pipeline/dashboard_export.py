@@ -27,6 +27,9 @@ def export(run_dir, summary_path, memo_path, destination, external=False):
         seed['external_count'] = len(rows)
         seed['metadata_version'] = 'final-reviewed-v1'
         seed['reviews'] = []
+        seed['summary']['project_cost'] = read_json(ROOT / 'evidence/final-100k/project-cost.json')
+        editorial = ROOT / 'evidence/final-100k/memo.structured.editorial.json'
+        if editorial.exists():seed['recommendation'] = read_json(editorial)
     write_json(destination, seed)
     return {"records": len(rows), "new_model_calls": 0, "saved_to": str(destination)}
 

@@ -1,36 +1,20 @@
 {
-  "deadline": "2026-10-20T23:59:00-07:00",
-  "deadline_source": "User update in chat",
-  "repository": "https://github.com/jennawang1121/spotify-review-pipeline-final",
-  "repository_public_signed_out_http": 200,
-  "clean_copy_tests_passed": 45,
-  "checkpoint_10000_checker": "pass",
-  "final_status_snapshot": {
-    "statuses": {
-      "completed": 100000,
-      "quarantined": 13
-    },
-    "cache_reused_records": 21901,
-    "completed_provenance": {
-      "provider_response": 100000
-    },
-    "label_config": "a88f521a408921f26919ae2e287281a304fdbbd78169ba1dc69764c591083eca",
-    "official_contract_validated": false
+  "state": "final_analysis_and_public_dashboard_ready",
+  "classification_complete": 100000,
+  "quarantined": 13,
+  "verification_valid": 4990,
+  "verification_failed": 10,
+  "offline_tests": 47,
+  "warm_new_api_calls": 0,
+  "official_checker_status": "review_required",
+  "official_checker_issues": {
+    "invalid_usage": 6
   },
-  "final_run_active": true,
-  "offline_postprocessing_started": true,
-  "dashboard_public_permission": "approved_after_final_update_and_validation",
-  "assignment_complete": false,
-  "final_classification": {
-    "completed": 100000,
-    "quarantined": 13,
-    "verification": "running after cache-tail conflict repair",
-    "tests_passed": 45
-  },
-  "dashboard_publication_authorized": true,
-  "dashboard_publication_condition": "After final data update and validation",
-  "project_api_budget_usd": 7,
-  "dashboard_deployment_blocker": null,
-  "dashboard_state": "100013 rows loaded and matched against local IDs/hashes/statuses; all rankings match; read-only private version deployed; final recommendation and public access pending",
-  "current_tests_passed": 47
+  "golden50_student_post_edit_review_confirmed": true,
+  "student_product_direction_endorsed": true,
+  "public_dashboard_browser_verified": true,
+  "remaining": [
+    "Publish final GitHub evidence archives and source",
+    "Student submits repository URL to course portal"
+  ]
 }

@@ -1,5 +1,5 @@
 """Prepare an honest private dashboard while final independent checks run."""
-import random,sqlite3
+import argparse,random,sqlite3
 from pathlib import Path
 from .common import read_json,write_json,canonical,digest
 from .store import records,validate_prediction
@@ -7,6 +7,7 @@ from .providers import openai_request,response_json
 from .runner import prediction_schema
 
 def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--report-only',action='store_true');args=parser.parse_args()
     root=Path('runs/final-100k');config=read_json(root/'label_configuration.json')
     rows=list(records(root/'source.sqlite',config['label_config']))
     eligible=[r for r in rows if r['status']=='completed']
@@ -29,6 +30,6 @@ def main():
     summary={'status':'final_classification_complete_verification_in_progress','source_rows':len(rows),'completed':len(eligible),'costs_this_experiment':{'known_api_usd':str(cost)},'outcomes':{'succeeded':count},'quality':quality,'warm_replay_complete':False}
     pending_memo='Final recommendation is pending completion of independent verification and the memo stage. The issue ranking already reflects all 100,000 classified nonempty reviews.'
     seed={'revision':'final-100013-'+config['label_config'][:12],'external_count':len(rows),'metadata_version':'verification-progress-'+str(len(checked)),'reviews':[],'summary':summary,'memo':pending_memo,'raw_memo':pending_memo,'recommendation':{'priority_issue_id':'pending','recommendation':pending_memo,'alternatives':'Alternatives and limitations will be published with the final verified recommendation.','claim_ids':[],'review_ids':[]},'names':{'issues':[{'issue_id':r['issue_id'],'name':r['issue_id'].removeprefix('issue-').title()} for r in pack['ranking']]},'pack':pack,'taxonomy':config['taxonomy'],'verification':checked,'final_scope':read_json('evidence/scope-100k.json')}
-    write_json('dashboard/data/seed.json',seed)
+    if not args.report_only:write_json('dashboard/data/seed.json',seed)
     print({'classified':len(eligible),'verification_valid':len(valid),'verification_failed':len(failed),'verification_pending':pending})
 if __name__=='__main__':main()
