@@ -13,3 +13,8 @@ dist/
 worker/
 data/course/spotify_reviews_18months.csv
 data/course-dataset.zip
+
+# Only the non-secret Site binding manifest is part of the reproducible build.
+!dashboard/.openai/
+dashboard/.openai/*
+!dashboard/.openai/hosting.json
